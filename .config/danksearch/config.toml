@@ -1,0 +1,28 @@
+# DankSearch Configuration (Integrated for DMS)
+index_path = "/home/duane/.cache/danksearch/index"
+listen_addr = ":43654"
+max_file_bytes = 1048576  # Reduced to 1MB for lower memory impact
+worker_count = 2          # Minimal CPU impact for background indexing
+index_all_files = true
+auto_reindex = true
+reindex_interval_hours = 24
+
+# Security and Web Features (New for 2026 Meta)
+[features]
+web_search_request = true # Enables integrated web search results
+
+text_extensions = [
+    ".txt", ".md", ".go", ".py", ".js", ".ts",
+    ".jsx", ".tsx", ".json", ".yaml", ".yml",
+    ".toml", ".html", ".css", ".rs", ".c",
+    ".cpp", ".h", ".java", ".rb", ".php", ".sh",
+]
+
+[[index_paths]]
+path = "/home/duane"
+max_depth = 4             # Shallower depth for faster, lighter indexing
+exclude_hidden = true
+exclude_dirs = [
+    ".git", "node_modules", "__pycache__", "venv", 
+    "target", "dist", "build", ".cache"
+]
