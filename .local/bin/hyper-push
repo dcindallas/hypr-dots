@@ -3,19 +3,23 @@
 
 CONFIG_CMD="/usr/bin/git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME"
 
-# 1. Stage and Commit local changes FIRST
+# 1. Stage everything (including the root files and bin)
 $CONFIG_CMD add -f ~/.config/hypr/ ~/.config/DankMaterialShell/ ~/.config/kitty/ \
                  ~/.config/gtk-3.0/ ~/.config/gtk-4.0/ ~/.config/matugen/ \
-                 ~/.config/danksearch/ ~/.config/starship/ ~/.local/bin/ \
-                 ~/.gitignore ~/README.md
+                 ~/.config/danksearch/ ~/.config/starship.toml ~/.local/bin/ \
+                 ~/.gitignore ~/README.md ~/GEMINI.md
 
-# Commit if there are changes; if not, just continue
-$CONFIG_CMD commit -m "Rice Update: $(date +'%Y-%m-%d %H:%M')" || echo "No local changes to commit"
+# 2. Commit local changes if they exist
+# Fixed the date formatting error that was causing 'extra operand' warnings
+$CONFIG_CMD commit -m "Rice Update: $(date +%Y-%m-%d_%H:%M)" || echo "No local changes to commit"
 
-# 2. Pull remote changes SECOND
-# Now that local changes are committed, rebase will work flawlessly
-$CONFIG_CMD pull --rebase origin main
+# 3. Pull remote changes with autostash
+# Added --autostash so it doesn't fail if you have small unstaged tweaks
+$CONFIG_CMD pull --rebase --autostash origin main
 
-# 3. Push to GitHub
-$CONFIG_CMD push origin main
-notify-send "Rice Sync" "hypr-dots backup successful"
+# 4. Push to GitHub
+if $CONFIG_CMD push origin main; then
+    notify-send "Rice Sync" "hypr-dots backup successful"
+else
+    notify-send "Rice Sync" "Push failed - check terminal"
+fi
