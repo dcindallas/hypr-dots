@@ -1,0 +1,49 @@
+# Move the prompt to a new line for a cleaner look
+add_newline = true
+
+[line_break]
+disabled = false
+
+[os]
+format = "[$symbol]($style) "
+style = "bold blue"
+disabled = false
+
+[os.symbols]
+Arch = "󰣇"
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " 󰌾"
+
+[git_branch]
+symbol = " "
+style = "bold magenta"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+
+[cpu]
+disabled = false
+format = "via [󰻠 $percentage]($style) "
+style = "bold yellow"
+threshold = 50
+
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+disabled = false
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[character]
+success_symbol = "[󰄾](bold green)" 
+error_symbol = "[󰄾](bold red)"
+vicmd_symbol = "[󰄾](bold yellow)"
