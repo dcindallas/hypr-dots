@@ -3,7 +3,7 @@
 
 CONFIG_CMD="/usr/bin/git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME"
 
-# 1. Stage everything (including missing Cava, GTK, and Starship)
+# 1. FORCE STAGE EVERYTHING - This bypasses the broken .gitignore logic
 $CONFIG_CMD add -f ~/.config/hypr/ \
                  ~/.config/DankMaterialShell/ \
                  ~/.config/kitty/ \
@@ -18,13 +18,13 @@ $CONFIG_CMD add -f ~/.config/hypr/ \
                  ~/README.md \
                  ~/GEMINI.md
 
-# 2. FIXED DATE: Removed the extra quotes that caused the 'extra operand' error
-$CONFIG_CMD commit -m "Rice Update: $(date +%Y-%m-%d_%H:%M)" || echo "No local changes to commit"
+# 2. FIXED DATE: Using an underscore instead of a space to kill the "extra operand" error
+$CONFIG_CMD commit -m "Rice-Update-$(date +%Y-%m-%d_%H:%M)" || echo "No local changes to commit"
 
-# 3. Pull remote changes with autostash
+# 3. PULL AND REBASE
 $CONFIG_CMD pull --rebase --autostash origin main
 
-# 4. Push to GitHub
+# 4. PUSH
 if $CONFIG_CMD push origin main; then
     notify-send "Rice Sync" "hypr-dots backup successful"
 else
