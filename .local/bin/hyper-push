@@ -3,18 +3,25 @@
 
 CONFIG_CMD="/usr/bin/git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME"
 
-# 1. Stage everything (including the root files and bin)
-$CONFIG_CMD add -f ~/.config/hypr/ ~/.config/DankMaterialShell/ ~/.config/kitty/ \
-                 ~/.config/gtk-3.0/ ~/.config/gtk-4.0/ ~/.config/matugen/ \
-                 ~/.config/danksearch/ ~/.config/starship.toml ~/.local/bin/ \
-                 ~/.gitignore ~/README.md ~/GEMINI.md
+# 1. Stage everything (Including the missing Cava, GTK, and Starship)
+$CONFIG_CMD add -f ~/.config/hypr/ \
+                 ~/.config/DankMaterialShell/ \
+                 ~/.config/kitty/ \
+                 ~/.config/gtk-3.0/ \
+                 ~/.config/gtk-4.0/ \
+                 ~/.config/matugen/ \
+                 ~/.config/cava/ \
+                 ~/.config/danksearch/ \
+                 ~/.config/starship.toml \
+                 ~/.local/bin/ \
+                 ~/.gitignore \
+                 ~/README.md \
+                 ~/GEMINI.md
 
 # 2. Commit local changes if they exist
-# Fixed the date formatting error that was causing 'extra operand' warnings
 $CONFIG_CMD commit -m "Rice Update: $(date +%Y-%m-%d_%H:%M)" || echo "No local changes to commit"
 
 # 3. Pull remote changes with autostash
-# Added --autostash so it doesn't fail if you have small unstaged tweaks
 $CONFIG_CMD pull --rebase --autostash origin main
 
 # 4. Push to GitHub
