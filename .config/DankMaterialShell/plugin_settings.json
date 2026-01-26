@@ -1,0 +1,13 @@
+{
+  "amdGpuMonitor": {
+    "enabled": true
+  },
+  "emojiLauncher": {
+    "enabled": true,
+    "noTrigger": true,
+    "trigger": ""
+  },
+  "dankKDEConnect": {
+    "enabled": true
+  }
+}

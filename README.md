@@ -1,0 +1,29 @@
+# hypr-dots 🚀
+
+A high-performance, Material 3-themed Arch Linux environment powered by **Hyprland** and **DMS**.
+
+<img width="2560" height="1440" alt="screenshot_2026-01-24_19-28-43" src="https://github.com/user-attachments/assets/e9285b3d-787b-40de-a2d3-7ddda9c679c1" />
+
+## 🖥️ System Specs
+- **CPU**: AMD Ryzen 5 5600U with Radeon Graphics (12 threads)
+- **Display**: Acer Technologies ED273U A @ 2560x1440
+- **Features**: 10-bit Color & Variable Refresh Rate (VRR) enabled
+- **OS**: Arch Linux (Kernel 6.18.7-zen1-1-zen)
+
+<img width="2560" height="1440" alt="screenshot_2026-01-24_19-32-24" src="https://github.com/user-attachments/assets/ee4c8990-9b81-47f3-a1f2-b791a3bde2eb" />
+
+## ARCH Inspired by DankLinux 
+Custom environment built on the foundation of [DankLinux](https://danklinux.com). 
+
+- **Official Site**: [archlinux.org](https://archlinux.org)
+- **Community**: [r/unixporn](https://reddit.com/r/unixporn)
+
+<img width="2560" height="1440" alt="screenshot_2026-01-25_12-53-34" src="https://github.com/user-attachments/assets/637cd082-4bae-4d9d-a8cc-d4333d81e463" />
+
+## 🎨 Components
+- **Shell**: Dank Material Shell (v1.2.3)
+- **Terminal**: Kitty
+- **Search**: DankSearch (Optimized local indexing)
+- **Theming**: Matugen (Material 3)
+
+<img width="2560" height="1440" alt="screenshot_2026-01-25_12-50-08" src="https://github.com/user-attachments/assets/05d78c13-e814-4e89-a5bd-96106520d126" />
