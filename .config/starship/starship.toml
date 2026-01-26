@@ -1,8 +1,14 @@
-# Move the prompt to a new line for a cleaner look
+# ============================================================================
+#  DankLinux Starship Prompt
+#  Enhanced configuration with system monitoring
+# ============================================================================
+
+# Clean layout with newline separation
 add_newline = true
 
-[line_break]
-disabled = false
+# ============================================================================
+#  OS & USERNAME
+# ============================================================================
 
 [os]
 format = "[$symbol]($style) "
@@ -12,38 +18,169 @@ disabled = false
 [os.symbols]
 Arch = "󰣇"
 
+[username]
+style_user = "bold yellow"
+style_root = "bold red"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "on [$hostname](bold green) "
+disabled = false
+
+# ============================================================================
+#  DIRECTORY
+# ============================================================================
+
 [directory]
 style = "bold cyan"
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = " 󰌾"
+home_symbol = "~"
+truncate_to_repo = true
+
+# ============================================================================
+#  GIT
+# ============================================================================
 
 [git_branch]
-symbol = " "
+symbol = " "
 style = "bold magenta"
 format = "on [$symbol$branch]($style) "
 
 [git_status]
 style = "bold red"
 format = "([\\[$all_status$ahead_behind\\]]($style) )"
+conflicted = "⚔️ "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = "📦"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
 
-[cpu]
-#disabled = false
-#format = "via [󰻠 $percentage]($style) "
-#style = "bold yellow"
-#threshold = 50
+[git_commit]
+commit_hash_length = 7
+tag_symbol = "🔖 "
+
+# ============================================================================
+#  SYSTEM RESOURCES
+# ============================================================================
+
+# Note: CPU/Memory modules may not be available in all Starship versions
+# If you get warnings, comment these out
 
 [battery]
 full_symbol = "󰁹 "
 charging_symbol = "󰂄 "
 discharging_symbol = "󰂃 "
+unknown_symbol = "󰂑 "
+empty_symbol = "󰂎 "
 disabled = false
 
 [[battery.display]]
-threshold = 30
+threshold = 10
 style = "bold red"
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+# ============================================================================
+#  PROGRAMMING LANGUAGES
+# ============================================================================
+
+[python]
+symbol = " "
+format = "via [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+style = "bold yellow"
+
+[nodejs]
+symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold green"
+
+[rust]
+symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold red"
+
+[golang]
+symbol = " "
+format = "via [$symbol($version )]($style)"
+style = "bold cyan"
+
+# ============================================================================
+#  PACKAGE MANAGERS
+# ============================================================================
+
+[package]
+symbol = "📦 "
+format = "is [$symbol$version]($style) "
+style = "bold 208"
+
+# ============================================================================
+#  CONTAINER & CLOUD
+# ============================================================================
+
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "bold blue"
+
+[kubernetes]
+symbol = "☸ "
+format = "on [$symbol$context( \\($namespace\\))]($style) "
+disabled = false
+
+# ============================================================================
+#  TIME
+# ============================================================================
+
+[time]
+disabled = false
+format = "at [$time]($style) "
+style = "bold white"
+time_format = "%I:%M %p"
+
+# ============================================================================
+#  COMMAND DURATION
+# ============================================================================
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration]($style) "
+style = "bold yellow"
+
+# ============================================================================
+#  CHARACTER (Prompt Symbol)
+# ============================================================================
 
 [character]
 success_symbol = "[󰄾](bold green)" 
 error_symbol = "[󰄾](bold red)"
 vicmd_symbol = "[󰄾](bold yellow)"
+
+# ============================================================================
+#  LINE BREAK
+# ============================================================================
+
+[line_break]
+disabled = false
+
+# ============================================================================
+#  STATUS
+# ============================================================================
+
+[status]
+style = "bold red"
+symbol = "✖"
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
