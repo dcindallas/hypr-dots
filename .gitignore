@@ -1,24 +1,26 @@
-# 1. Whitelist the root files first
+# 1. Root Whitelist
 !README.md
 !GEMINI.md
 !.gitignore
 
-# 2. Ignore everything else in the root
+# 2. The Blanket Ignore
 *
 
-# 3. Whitelist your config directories
+# 3. Allow Directory Traversal
 !*/
-!.config/hypr/**
-!.config/DankMaterialShell/**
-# But skip the bloat inside DMS
-.config/DankMaterialShell/plugins/
-.config/DankMaterialShell/themes/
 
+# 4. The "Dank" Whitelist (Everything inside these)
+!.config/hypr/**
+!.config/matugen/**
+!.local/bin/**
 !.config/kitty/**
 !.config/gtk-3.0/**
 !.config/gtk-4.0/**
-!.config/matugen/**
 !.config/danksearch/**
-!.local/bin/dms-sync
-!.local/bin/hyper-push
+
+# 5. Targeted Files & DMS Logic
 !.config/starship.toml
+!.config/DankMaterialShell/**
+# Explicitly block the junk inside DMS
+.config/DankMaterialShell/plugins/
+.config/DankMaterialShell/themes/

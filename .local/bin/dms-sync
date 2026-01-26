@@ -1,0 +1,15 @@
+#!/bin/bash
+# Monitor the DMS directory for changes
+WATCH_DIR="$HOME/.config/hypr/dms"
+
+echo "DMS Architect: Monitoring $WATCH_DIR for Matugen updates..."
+
+# -m: monitor mode
+# -q: quiet (cleaner logs)
+# -e close_write: triggers only when Matugen finishes saving the file
+inotifywait -m -q -e close_write "$WATCH_DIR/colors.conf" | while read -r directory events filename; do
+    # Reload Cava via USR1 signal to pick up new Matugen templates 
+    pkill -USR1 cava && echo "Cava colors synced: $(date +%H:%M:%S)"
+    # Reload kitty via USR1 signal to pick up new Matugen templates 
+	pkill -USR1 kitty && echo "kitty colors synced: $(date +%H:%M:%S)"
+done
