@@ -1,32 +1,46 @@
-#!/bin/bash
-# Optimized for hypr-dots Bare Repository
+#!/usr/bin/env fish
+# Safe hypr-dots Sync Script
 
-CONFIG_CMD="/usr/bin/git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME"
+# Check for uncommitted changes first
+set -l status_output (git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME status --porcelain)
 
-# 1. FORCE STAGE EVERYTHING
-$CONFIG_CMD add -f ~/.config/hypr/ \
-                 ~/.config/DankMaterialShell/ \
-                 ~/.config/kitty/ \
-                 ~/.config/gtk-3.0/ \
-                 ~/.config/gtk-4.0/ \
-                 ~/.config/matugen/ \
-                 ~/.config/cava/ \
-                 ~/.config/danksearch/ \
-                 ~/.config/starship/starship.toml \
-                 ~/.local/bin/ \
-                 ~/.gitignore \
-                 ~/README.md \
-                 ~/GEMINI.md
+if test -z "$status_output"
+    notify-send "Rice Sync" "No changes to push"
+    exit 0
+end
 
-# 2. COMMIT WITHOUT DATE
-$CONFIG_CMD commit -m "Rice Sync Update" || echo "No local changes to commit"
+# Show what will be committed
+echo "Changes detected:"
+git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME status --short
 
-# 3. PULL AND REBASE
-$CONFIG_CMD pull --rebase --autostash origin main
+# Add only modified tracked files (never -f)
+set -l modified_files (git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME diff --name-only)
+if test -n "$modified_files"
+    for file in $modified_files
+        git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME add $file
+        echo "Staged: $file"
+    end
+end
 
-# 4. PUSH
-if $CONFIG_CMD push origin main; then
-    notify-send "Rice Sync" "hypr-dots backup successful"
+# Commit
+if git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME commit -m "Rice Sync Update - $(date +%Y-%m-%d)"
+    echo "Committed successfully"
+else
+    notify-send "Rice Sync" "Nothing to commit"
+    exit 0
+end
+
+# Pull with rebase
+if not git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME pull --rebase origin main
+    notify-send "Rice Sync" "Pull failed - resolve conflicts"
+    exit 1
+end
+
+# Push
+if git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME push origin main
+    notify-send "Rice Sync" "Backup successful ✓"
+    echo "Pushed to GitHub successfully"
 else
     notify-send "Rice Sync" "Push failed - check terminal"
-fi
+    exit 1
+end
