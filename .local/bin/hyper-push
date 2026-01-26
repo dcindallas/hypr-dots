@@ -3,7 +3,7 @@
 
 CONFIG_CMD="/usr/bin/git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME"
 
-# 1. FORCE STAGE EVERYTHING - This bypasses the broken .gitignore logic
+# 1. FORCE STAGE EVERYTHING (Fixed Starship path and added Cava/GTK)
 $CONFIG_CMD add -f ~/.config/hypr/ \
                  ~/.config/DankMaterialShell/ \
                  ~/.config/kitty/ \
@@ -12,14 +12,14 @@ $CONFIG_CMD add -f ~/.config/hypr/ \
                  ~/.config/matugen/ \
                  ~/.config/cava/ \
                  ~/.config/danksearch/ \
-                 ~/.config/starship.toml \
+                 ~/.config/starship/starship.toml \
                  ~/.local/bin/ \
                  ~/.gitignore \
                  ~/README.md \
                  ~/GEMINI.md
 
-# 2. FIXED DATE: Using an underscore instead of a space to kill the "extra operand" error
-$CONFIG_CMD commit -m "Rice-Update-$(date +%Y-%m-%d_%H:%M)" || echo "No local changes to commit"
+# 2. COMMIT WITH ZERO-SPACE DATE (Fixes "extra operand" error)
+$CONFIG_CMD commit -m "Update-$(date +%Y%m%d-%H%M%S)" || echo "No local changes"
 
 # 3. PULL AND REBASE
 $CONFIG_CMD pull --rebase --autostash origin main
