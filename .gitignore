@@ -1,0 +1,13 @@
+*
+!*/
+!.gitignore
+!.config/hypr/**
+!.config/DankMaterialShell/**
+!.config/kitty/**
+!.config/gtk-3.0/**
+!.config/gtk-4.0/**
+!.config/matugen/**
+!.config/danksearch/**
+!.local/bin/dms-sync
+!.local/bin/hyper-push
+!.config/starship/
