@@ -3,7 +3,7 @@
 
 CONFIG_CMD="/usr/bin/git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME"
 
-# 1. FORCE STAGE EVERYTHING (Fixed Starship path and added Cava/GTK)
+# 1. FORCE STAGE EVERYTHING
 $CONFIG_CMD add -f ~/.config/hypr/ \
                  ~/.config/DankMaterialShell/ \
                  ~/.config/kitty/ \
@@ -18,8 +18,8 @@ $CONFIG_CMD add -f ~/.config/hypr/ \
                  ~/README.md \
                  ~/GEMINI.md
 
-# 2. COMMIT WITH ZERO-SPACE DATE (Fixes "extra operand" error)
-$CONFIG_CMD commit -m "Update-$(date +%Y%m%d-%H%M%S)" || echo "No local changes"
+# 2. COMMIT WITHOUT DATE
+$CONFIG_CMD commit -m "Rice Sync Update" || echo "No local changes to commit"
 
 # 3. PULL AND REBASE
 $CONFIG_CMD pull --rebase --autostash origin main
