@@ -1,0 +1,6 @@
+[config]
+
+[templates.cava]
+input_path = '/home/duane/.config/matugen/templates/cava.conf'
+output_path = '/home/duane/.config/cava/config'
+

@@ -1,26 +1,29 @@
-# 1. Root Whitelist
-!README.md
-!GEMINI.md
-!.gitignore
-
-# 2. The Blanket Ignore
-*
-
-# 3. Allow Directory Traversal
+# 1. Un-ignore the directories so Git can actually enter them
 !*/
 
-# 4. The "Dank" Whitelist (Everything inside these)
+# 2. Ignore everything else by default
+*
+
+# 3. Whitelist your root files
+!.gitignore
+!README.md
+!GEMINI.md
+
+# 4. Whitelist your entire config folders
 !.config/hypr/**
 !.config/matugen/**
-!.local/bin/**
 !.config/kitty/**
 !.config/gtk-3.0/**
 !.config/gtk-4.0/**
 !.config/danksearch/**
-
-# 5. Targeted Files & DMS Logic
-!.config/starship.toml
 !.config/DankMaterialShell/**
-# Explicitly block the junk inside DMS
+
+# 5. Whitelist your scripts
+!.local/bin/**
+
+# 6. Whitelist specific files
+!.config/starship.toml
+
+# 7. RE-IGNORE the bloat inside DMS
 .config/DankMaterialShell/plugins/
 .config/DankMaterialShell/themes/
