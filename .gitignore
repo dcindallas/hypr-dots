@@ -1,11 +1,19 @@
-*
-!*/
+# 1. Whitelist the root files first
+!README.md
+!GEMINI.md
 !.gitignore
+
+# 2. Ignore everything else in the root
+*
+
+# 3. Whitelist your config directories
+!*/
 !.config/hypr/**
 !.config/DankMaterialShell/**
-# Explicitly ignore the junk sub-folders inside DMS
+# But skip the bloat inside DMS
 .config/DankMaterialShell/plugins/
 .config/DankMaterialShell/themes/
+
 !.config/kitty/**
 !.config/gtk-3.0/**
 !.config/gtk-4.0/**
@@ -14,5 +22,3 @@
 !.local/bin/dms-sync
 !.local/bin/hyper-push
 !.config/starship.toml
-!README.md
-!GEMINI.md
