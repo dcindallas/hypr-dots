@@ -28,10 +28,10 @@ style = "bold red"
 format = "([\\[$all_status$ahead_behind\\]]($style) )"
 
 [cpu]
-disabled = false
-format = "via [󰻠 $percentage]($style) "
-style = "bold yellow"
-threshold = 50
+#disabled = false
+#format = "via [󰻠 $percentage]($style) "
+#style = "bold yellow"
+#threshold = 50
 
 [battery]
 full_symbol = "󰁹 "
