@@ -26,4 +26,4 @@ Custom environment built on the foundation of [DankLinux](https://danklinux.com)
 - **Search**: DankSearch (Optimized local indexing)
 - **Theming**: Matugen (Material 3)
 
-<img width="2560" height="1440" alt="screenshot_2026-01-25_12-50-08" src="https://github.com/user-attachments/assets/05d78c13-e814-4e89-a5bd-96106520d126" />
+<img width="2560" height="1440" alt="screenshot_2026-01-27_14-55-57" src="https://github.com/user-attachments/assets/64336324-edbf-43b0-a745-773e437668f1" />
