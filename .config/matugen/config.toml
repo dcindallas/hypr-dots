@@ -4,3 +4,6 @@
 input_path = '/home/duane/.config/matugen/templates/cava.conf'
 output_path = '/home/duane/.config/cava/config'
 
+[templates.thunderbird]
+input_path = '/home/duane/.config/matugen/templates/thunderbird-userChrome.css'
+output_path = '/home/duane/.thunderbird/a8f88me1.default-release/chrome/userChrome.css'

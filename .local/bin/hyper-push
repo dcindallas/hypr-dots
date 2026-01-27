@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-# Safe hypr-dots Sync Script
+# Safe hypr-dots Sync Script because I am that fucking cool
 
 # Check for uncommitted changes first
 set -l status_output (git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME status --porcelain)

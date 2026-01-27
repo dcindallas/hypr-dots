@@ -1,16 +1,17 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/catppuccin/theme.json",
+  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/tokyoNight/theme.json",
   "registryThemeVariants": {
     "catppuccin": {
       "flavor": "mocha",
       "accent": "rosewater"
     },
     "flexoki": "yellow",
-    "gruvboxMaterial": "hard"
+    "gruvboxMaterial": "hard",
+    "petrichor": "blue"
   },
-  "matugenScheme": "scheme-fidelity",
+  "matugenScheme": "scheme-neutral",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -102,12 +103,12 @@
       "width": 50
     },
     {
-      "id": "nightMode",
+      "id": "darkMode",
       "enabled": true,
       "width": 50
     },
     {
-      "id": "darkMode",
+      "id": "colorPicker",
       "enabled": true,
       "width": 50
     }
@@ -145,7 +146,7 @@
   "clockDateFormat": "",
   "lockDateFormat": "",
   "mediaSize": 1,
-  "appLauncherViewMode": "list",
+  "appLauncherViewMode": "grid",
   "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 4,
@@ -342,11 +343,22 @@
       "showOnLastDisplay": true,
       "leftWidgets": [
         "launcherButton",
-        "workspaceSwitcher",
-        "focusedWindow"
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        },
+        {
+          "id": "focusedWindow",
+          "enabled": true,
+          "focusedWindowCompactMode": false
+        }
       ],
       "centerWidgets": [
-        "music",
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 2
+        },
         "clock",
         "weather"
       ],
@@ -373,10 +385,6 @@
           "minimumWidth": true
         },
         {
-          "id": "idleInhibitor",
-          "enabled": true
-        },
-        {
           "id": "notificationButton",
           "enabled": true
         },
@@ -392,16 +400,16 @@
       "spacing": 15,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.5,
-      "widgetTransparency": 0.14,
+      "transparency": 0.6,
+      "widgetTransparency": 0.1,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": true,
-      "borderColor": "secondary",
-      "borderOpacity": 0.9,
+      "borderColor": "primary",
+      "borderOpacity": 0.8,
       "borderThickness": 1,
       "widgetOutlineEnabled": false,
       "widgetOutlineColor": "surfaceText",
@@ -419,9 +427,9 @@
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
-      "shadowIntensity": 60,
-      "shadowOpacity": 65,
-      "shadowColorMode": "surface",
+      "shadowIntensity": 25,
+      "shadowOpacity": 45,
+      "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
     }
   ],
