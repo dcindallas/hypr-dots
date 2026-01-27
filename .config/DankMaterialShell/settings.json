@@ -10,7 +10,7 @@
     "flexoki": "yellow",
     "gruvboxMaterial": "hard"
   },
-  "matugenScheme": "scheme-vibrant",
+  "matugenScheme": "scheme-fidelity",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -112,7 +112,7 @@
       "width": 50
     }
   ],
-  "showWorkspaceIndex": false,
+  "showWorkspaceIndex": true,
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
@@ -155,7 +155,7 @@
   "weatherEnabled": true,
   "networkPreference": "auto",
   "vpnLastConnected": "",
-  "iconTheme": "breeze-dark",
+  "iconTheme": "Dracula",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -278,7 +278,7 @@
   "notificationTimeoutLow": 10000,
   "notificationTimeoutNormal": 15000,
   "notificationTimeoutCritical": 0,
-  "notificationCompactMode": true,
+  "notificationCompactMode": false,
   "notificationPopupPosition": 0,
   "notificationHistoryEnabled": true,
   "notificationHistoryMaxCount": 50,
@@ -373,6 +373,10 @@
           "minimumWidth": true
         },
         {
+          "id": "idleInhibitor",
+          "enabled": true
+        },
+        {
           "id": "notificationButton",
           "enabled": true
         },
@@ -388,22 +392,22 @@
       "spacing": 15,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.9,
-      "widgetTransparency": 1,
+      "transparency": 0.5,
+      "widgetTransparency": 0.14,
       "squareCorners": false,
       "noBackground": false,
-      "gothCornersEnabled": false,
+      "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": true,
-      "borderColor": "surfaceText",
+      "borderColor": "secondary",
       "borderOpacity": 0.9,
       "borderThickness": 1,
       "widgetOutlineEnabled": false,
       "widgetOutlineColor": "surfaceText",
       "widgetOutlineOpacity": 1,
       "widgetOutlineThickness": 1,
-      "fontScale": 1,
+      "fontScale": 1.05,
       "autoHide": false,
       "autoHideDelay": 250,
       "showOnWindowsOpen": false,
