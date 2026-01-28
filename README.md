@@ -2,7 +2,7 @@
 
 A high-performance, Material 3-themed Arch Linux environment powered by **Hyprland** and **DMS**.
 
-<img width="2560" height="1440" alt="screenshot_2026-01-24_19-28-43" src="https://github.com/user-attachments/assets/e9285b3d-787b-40de-a2d3-7ddda9c679c1" />
+<img width="2958" height="1840" alt="dank-void-001" src="https://github.com/user-attachments/assets/d034e1c0-fb15-4c14-a15a-aafaad2124fe" />
 
 ## 🖥️ System Specs
 - **CPU**: AMD Ryzen 5 5600U with Radeon Graphics (12 threads)
@@ -26,4 +26,4 @@ Custom environment built on the foundation of [DankLinux](https://danklinux.com)
 - **Search**: DankSearch (Optimized local indexing)
 - **Theming**: Matugen (Material 3)
 
-<img width="2560" height="1440" alt="screenshot_2026-01-27_14-55-57" src="https://github.com/user-attachments/assets/64336324-edbf-43b0-a745-773e437668f1" />
+<img width="2560" height="1440" alt="screenshot_2026-01-24_19-28-43" src="https://github.com/user-attachments/assets/e9285b3d-787b-40de-a2d3-7ddda9c679c1" />
