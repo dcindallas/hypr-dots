@@ -2,7 +2,7 @@
 
 A high-performance, Material 3-themed Arch Linux environment powered by **Hyprland** and **DMS**.
 
-<img width="2958" height="1840" alt="dank-void-001" src="https://github.com/user-attachments/assets/d034e1c0-fb15-4c14-a15a-aafaad2124fe" />
+<img width="2958" height="1840" alt="dank-void-002" src="https://github.com/user-attachments/assets/0b68b543-3b3e-4087-a6f4-8c59c4496cc6" />
 
 ## 🖥️ System Specs
 - **CPU**: AMD Ryzen 5 5600U with Radeon Graphics (12 threads)
