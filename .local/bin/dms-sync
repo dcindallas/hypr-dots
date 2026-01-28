@@ -12,5 +12,8 @@ inotifywait -m -q -e close_write "$WATCH_DIR/colors.conf" | while read -r direct
     pkill -USR1 cava && echo "Cava colors synced: $(date +%H:%M:%S)"
     # Reload kitty via USR1 signal to pick up new Matugen templates 
     pkill -USR1 kitty && echo "kitty colors synced: $(date +%H:%M:%S)"
-   
+	pkill -USR1 kitty-dropdown && echo "kitty-dropdown colors synced: $(date +%H:%M:%S)"
+   # Force Geany to reload and refresh UI
+    #geany --command "reload_all" && echo "Geany refreshed: $(date +%H:%M:%S)"
+    
 done
