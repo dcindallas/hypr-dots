@@ -11,10 +11,10 @@
     "gruvboxMaterial": "hard",
     "petrichor": "blue"
   },
-  "matugenScheme": "scheme-neutral",
+  "matugenScheme": "scheme-monochrome",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 1,
+  "popupTransparency": 0.8,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sc",
   "widgetColorMode": "default",
@@ -397,7 +397,7 @@
           "enabled": true
         }
       ],
-      "spacing": 15,
+      "spacing": 32,
       "innerPadding": 3,
       "bottomGap": 0,
       "transparency": 0.6,
