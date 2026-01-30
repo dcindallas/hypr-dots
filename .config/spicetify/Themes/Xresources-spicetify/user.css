@@ -12,6 +12,12 @@
 	--spice-button-disabled: rgba(var(--spice-rgb-button-disabled), 0.2); 
 }
 
+/* Hide the bottom ad banner container */
+.main-leaderboardComponent-container,
+.main-ad-leaderboard,
+div[data-testid="test-ad-id"] {
+    display: none !important;
+}
 
 * {
 	font-family: Montserrat;

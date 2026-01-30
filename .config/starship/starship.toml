@@ -82,7 +82,7 @@ charging_symbol = "󰂄 "
 discharging_symbol = "󰂃 "
 unknown_symbol = "󰂑 "
 empty_symbol = "󰂎 "
-disabled = false
+disabled = true
 
 [[battery.display]]
 threshold = 10

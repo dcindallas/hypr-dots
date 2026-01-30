@@ -11,12 +11,12 @@
     "gruvboxMaterial": "soft",
     "petrichor": "blue"
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-content",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 0.9,
   "dockTransparency": 1,
-  "widgetBackgroundColor": "sth",
+  "widgetBackgroundColor": "sc",
   "widgetColorMode": "default",
   "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
@@ -32,7 +32,7 @@
   "showSeconds": false,
   "useFahrenheit": true,
   "nightModeEnabled": false,
-  "animationSpeed": 2,
+  "animationSpeed": 3,
   "customAnimationDuration": 500,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
@@ -180,8 +180,8 @@
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "SF Pro Text",
-  "monoFontFamily": "SF Mono [APPL]",
+  "fontFamily": "SF Pro Display",
+  "monoFontFamily": "Reddit Mono",
   "fontWeight": 400,
   "fontScale": 1,
   "notepadUseMonospace": true,
@@ -364,10 +364,6 @@
       ],
       "rightWidgets": [
         {
-          "id": "notificationButton",
-          "enabled": true
-        },
-        {
           "id": "systemTray",
           "enabled": true
         },
@@ -389,6 +385,10 @@
           "minimumWidth": true
         },
         {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
           "id": "battery",
           "enabled": true
         },
@@ -400,8 +400,8 @@
       "spacing": 32,
       "innerPadding": 3,
       "bottomGap": 0,
-      "transparency": 0.53,
-      "widgetTransparency": 0.79,
+      "transparency": 0.8,
+      "widgetTransparency": 0.85,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": true,

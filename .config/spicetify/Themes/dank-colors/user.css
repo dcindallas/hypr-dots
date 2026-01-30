@@ -1,0 +1,213 @@
+/* ========================================
+   DuaneLinux Spicetify Theme
+   Based on Retroblur by Motschen
+   ======================================== */
+
+:root {
+  --sidebar-y-offset: 0px;
+  --border-radius-1: 20px;
+  --border-radius-2: 8px;
+  --border-radius-3: 4px;
+  --scrollbars: unset;
+  --spice-main: transparent;
+  --spice-misc: rgba(30, 30, 30, 0.8);
+  --spice-player: rgba(30, 30, 30, 0.45);
+  --retroblur-player: rgba(30, 30, 30, 0.45);
+}
+
+/* ========================================
+   Background & Base Layout
+   ======================================== */
+body {
+  background-image: url("https://imgur.com/OmZfNoY.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.Root__top-container {
+  background: transparent;
+}
+
+.Root__now-playing-bar {
+  backdrop-filter: blur(14px) !important;
+  background-color: rgba(30, 30, 30, 0.6) !important;
+  border-radius: var(--border-radius-2) !important;
+}
+
+.main-nowPlayingBar-container {
+  background-color: var(--retroblur-player);
+  border-radius: var(--border-radius-2) !important;
+}
+
+/* ========================================
+   DuaneLinux Color System
+   ======================================== */
+
+/* All text defaults to white */
+*,
+span, p, h1, h2, h3, h4, button, a, div,
+.main-type-mestoBold,
+.main-type-alto,
+.main-trackList-rowTitle,
+.main-cardHeader-text,
+.main-entityHeader-title,
+.main-entityHeader-subtitle,
+.main-topBar-topbarContent *,
+.main-topBar-button,
+.main-topBar-HistoryButtons button,
+.main-nowPlayingBar-nowPlayingBar *,
+.main-trackInfo-name,
+.main-trackInfo-artists,
+.main-nowPlayingView-nowPlayingWidget *,
+.main-nowPlayingWidget-trackInfo *,
+.main-contextMenu-menuItem * {
+  color: #ffffff !important;
+}
+
+/* Secondary/muted text */
+.main-type-minuet,
+.main-trackList-rowSubTitle,
+.main-cardHeader-link,
+time,
+.main-entityHeader-metaDataText {
+  color: var(--spice-subtext) !important;
+}
+
+/* Playing track in playlist */
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle,
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+  color: var(--spice-subtext);
+}
+
+.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowTitle {
+  color: var(--spice-button);
+}
+
+/* ========================================
+   Kill Scrollbars
+   ======================================== */
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* ========================================
+   Window Backgrounds
+   ======================================== */
+.main-rootlist-rootlistPlaylistsScrollNode,
+.main-trackList-trackList,
+.main-yourLibraryX-libraryRootlist,
+[data-encore-web-color*="background"] {
+  background-color: var(--spice-main) !important;
+}
+
+.main-card-card,
+.main-contextMenu-menu,
+.main-popover-popover {
+  background-color: var(--spice-card) !important;
+}
+
+/* ========================================
+   Sidebar & Navigation
+   ======================================== */
+.main-yourLibraryX-libraryContainer.main-yourLibraryX-libraryIsExpanded.main-yourLibraryX-libraryIsCollapsed {
+  padding-bottom: 0px;
+}
+
+.main-yourLibraryX-navItem {
+  padding: 1px 12px;
+}
+
+.main-yourLibraryX-header {
+  position: relative;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.home-active-icon, .search-active-icon, .collection-active-icon {
+  color: white;
+  fill: white;
+  filter: drop-shadow(0px 0px 10px white);
+}
+
+/* ========================================
+   Buttons & Interactive Elements
+   ======================================== */
+button[aria-label*="Play"],
+button[aria-label*="Pause"],
+.main-playButton-PlayButton {
+  color: var(--spice-button) !important;
+}
+
+.main-repeatButton-button, .main-shuffleButton-button {
+  color: var(--spice-subtext);
+  opacity: 70%;
+}
+
+.X1lXSiVj0pzhQCUo_72A, .X1lXSiVj0pzhQCUo_72A:hover {
+  color: var(--spice-button);
+}
+
+/* ========================================
+   Animations & Effects
+   ======================================== */
+@keyframes fadingGlow {
+  from {} to { filter: drop-shadow(0 0 6px var(--spice-button)); }
+}
+
+@keyframes fadingGlowWhite {
+  from {} to { filter: drop-shadow(0 0 6px); }
+}
+
+.gSLhUO:hover, .main-playButton-PlayButton.main-playButton-primary:hover, 
+.main-pageErrorTemplate-errorButton:hover, .main-rootlist-rootlistItemLink.main-rootlist-rootlistItemLinkActive:hover, 
+.main-navBar-navBarLinkActive:hover, .control-button-heart:hover, .gHYQaG:hover, .iaAUvZ:hover {
+  animation: fadingGlow 1s ease 0.5 forwards !important;
+}
+
+a:hover, .main-trackList-rowPlayPauseButton:hover, svg:hover {
+  animation: fadingGlowWhite 1s ease 0.5 forwards;
+}
+
+/* ========================================
+   Fixes & Adjustments
+   ======================================== */
+.main-topBar-UpgradeButton {
+  display: none;
+}
+
+.main-tag-container {
+  color: black;
+  background-color: var(--spice-text);
+}
+
+.main-buddyFeed-buddyFeedRoot {
+  background-color: rgba(30, 30, 30, 0.4);
+  backdrop-filter: blur(14px) !important;
+}
+
+.lyrics-lyrics-background {
+  background-color: rgba(30, 30, 30, 0.4)
+}
+
+.lyrics-lyrics-contentContainer {
+  --lyrics-color-active: #ffde00 !important;
+  --lyrics-color-inactive: #D56F80 !important;
+  --lyrics-color-background: #1e1e1e !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+.playlist-playlist-playlistContent {
+  background: transparent;
+}
+
+.GenericModal > div {
+  backdrop-filter: blur(14px);
+  background: var(--retroblur-player);
+}
