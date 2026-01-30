@@ -13,14 +13,12 @@ end
 echo "Changes detected:"
 git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME status --short
 
-# Add only modified tracked files (never -f)
-set -l modified_files (git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME diff --name-only)
-if test -n "$modified_files"
-    for file in $modified_files
-        git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME add $file
-        echo "Staged: $file"
-    end
-end
+# Add only modified tracked files using update flag (safe, only stages tracked files)
+git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME add -u
+echo "All modified tracked files staged"
+
+# Show what was staged
+git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME status --short
 
 # Commit
 if git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME commit -m "Rice Sync Update - $(date +%Y-%m-%d)"

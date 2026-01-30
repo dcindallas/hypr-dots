@@ -1,22 +1,22 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/tokyoNight/theme.json",
+  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/kanagawaWl/theme.json",
   "registryThemeVariants": {
     "catppuccin": {
-      "flavor": "mocha",
-      "accent": "rosewater"
+      "flavor": "frappe",
+      "accent": "blue"
     },
     "flexoki": "yellow",
-    "gruvboxMaterial": "hard",
+    "gruvboxMaterial": "soft",
     "petrichor": "blue"
   },
-  "matugenScheme": "scheme-monochrome",
+  "matugenScheme": "scheme-neutral",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 0.8,
   "dockTransparency": 1,
-  "widgetBackgroundColor": "sc",
+  "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
   "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
@@ -400,8 +400,8 @@
       "spacing": 32,
       "innerPadding": 3,
       "bottomGap": 0,
-      "transparency": 0.6,
-      "widgetTransparency": 0.1,
+      "transparency": 0.53,
+      "widgetTransparency": 0.79,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": true,
@@ -427,7 +427,7 @@
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
-      "shadowIntensity": 25,
+      "shadowIntensity": 20,
       "shadowOpacity": 45,
       "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
