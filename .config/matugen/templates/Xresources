@@ -57,3 +57,12 @@ Xcursor.size: 24
 *.md_surface:           {{colors.surface.default.hex}}
 *.md_surface_container: {{colors.surface_container.default.hex}}
 *.md_error:             {{colors.error.default.hex}}
+! Spicetify-friendly aliases (no asterisk prefix)
+md_primary:           {{colors.primary.default.hex}}
+md_on_primary:        {{colors.on_primary.default.hex}}
+md_primary_container: {{colors.primary_container.default.hex}}
+md_secondary:         {{colors.secondary.default.hex}}
+md_tertiary:          {{colors.tertiary.default.hex}}
+md_surface:           {{colors.surface.default.hex}}
+md_surface_container: {{colors.surface_container.default.hex}}
+md_error:             {{colors.error.default.hex}}

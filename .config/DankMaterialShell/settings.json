@@ -14,9 +14,9 @@
   "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.8,
+  "popupTransparency": 0.9,
   "dockTransparency": 1,
-  "widgetBackgroundColor": "sch",
+  "widgetBackgroundColor": "sth",
   "widgetColorMode": "default",
   "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
@@ -147,7 +147,7 @@
   "lockDateFormat": "",
   "mediaSize": 1,
   "appLauncherViewMode": "grid",
-  "spotlightModalViewMode": "list",
+  "spotlightModalViewMode": "grid",
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
@@ -364,6 +364,10 @@
       ],
       "rightWidgets": [
         {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
           "id": "systemTray",
           "enabled": true
         },
@@ -383,10 +387,6 @@
           "id": "cpuTemp",
           "enabled": true,
           "minimumWidth": true
-        },
-        {
-          "id": "notificationButton",
-          "enabled": true
         },
         {
           "id": "battery",
