@@ -147,7 +147,7 @@
   "lockDateFormat": "",
   "mediaSize": 1,
   "appLauncherViewMode": "grid",
-  "spotlightModalViewMode": "grid",
+  "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
