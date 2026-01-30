@@ -11,3 +11,7 @@ output_path = '/home/duane/.thunderbird/a8f88me1.default-release/chrome/userChro
 [templates.geany]
 input_path = '/home/duane/.config/matugen/templates/geany.conf'
 output_path = '/home/duane/.config/geany/colorschemes/dms-matugen.conf'
+
+[templates.xresources]
+input_path = '/home/duane/.config/matugen/templates/Xresources'
+output_path = '/home/duane/.Xresources'
