@@ -2,18 +2,27 @@
 # Monitor the DMS directory for changes
 WATCH_DIR="$HOME/.config/hypr/dms"
 
-echo "DMS Architect: Monitoring $WATCH_DIR for Matugen updates..."
+	echo "DMS Architect: Monitoring $WATCH_DIR for Matugen updates..."
 
 # -m: monitor mode
 # -q: quiet (cleaner logs)
 # -e close_write: triggers only when Matugen finishes saving the file
-inotifywait -m -q -e close_write "$WATCH_DIR/colors.conf" | while read -r directory events filename; do
+	inotifywait -m -q -e close_write "$WATCH_DIR/colors.conf" | while read -r directory events filename; do
+    
+    # Reload Xresources for Spicetify and other apps
+    xrdb -merge ~/.Xresources && echo "Xresources synced: $(date +%H:%M:%S)"
+    
     # Reload Cava via USR1 signal to pick up new Matugen templates 
     pkill -USR1 cava && echo "Cava colors synced: $(date +%H:%M:%S)"
+    
     # Reload kitty via USR1 signal to pick up new Matugen templates 
     pkill -USR1 kitty && echo "kitty colors synced: $(date +%H:%M:%S)"
 	pkill -USR1 kitty-dropdown && echo "kitty-dropdown colors synced: $(date +%H:%M:%S)"
-   # Lets try and reload gtk-theme 
-    gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3 && echo "gtk-theme synced: $(date +%H:%M:%S)"
+   
+    # Reload GTK theme by toggling it
+    CURRENT_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | tr -d "'")
+    gsettings set org.gnome.desktop.interface gtk-theme "" && \
+    gsettings set org.gnome.desktop.interface gtk-theme "$CURRENT_THEME" && \
+    echo "gtk-theme synced: $(date +%H:%M:%S)"
     
 done

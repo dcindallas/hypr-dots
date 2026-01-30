@@ -15,3 +15,11 @@ output_path = '/home/duane/.config/geany/colorschemes/dms-matugen.conf'
 [templates.xresources]
 input_path = '/home/duane/.config/matugen/templates/Xresources'
 output_path = '/home/duane/.Xresources'
+
+[templates.duane-gtk4]
+input_path = '/home/duane/.config/matugen/templates/gtk-colors.css'
+output_path = '/home/duane/.config/gtk-4.0/duane-colors.css'
+
+[templates.duane-gtk3]
+input_path = '/home/duane/.config/matugen/templates/gtk-colors.css'
+output_path = '/home/duane/.config/gtk-3.0/duane-colors.css'
