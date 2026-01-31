@@ -27,3 +27,7 @@ output_path = '/home/duane/.config/gtk-3.0/duane-colors.css'
 [templates.color-finder]
 input_path = '/home/duane/.config/matugen/templates/dank-color-finder'
 output_path = '/home/duane/color-files/colors.css'
+
+[templates.kitty-color]
+input_path = "~/.config/matugen/templates/kitty-colors.conf"
+output_path = "~/.config/kitty/dank16-colors.conf"

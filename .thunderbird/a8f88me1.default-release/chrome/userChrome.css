@@ -48,7 +48,7 @@
 
 /* Active/selected tab background - SECONDARY ACCENT */
 .tab-background[selected="true"] {
-  background-color: #414659 !important;
+  background-color: #46492e !important;
 }
 
 /* Tab text color (inactive) */
@@ -58,7 +58,7 @@
 
 /* Tab text color (active) - SECONDARY ACCENT */
 .tab-background[selected="true"] .tab-text {
-  color: #dde1f9 !important;
+  color: #e3e5c1 !important;
 }
 
 /* Tab close button */
@@ -68,7 +68,7 @@
 
 /* Tab hover state - SECONDARY ACCENT */
 .tab-background:hover {
-  background-color: #414659 !important;
+  background-color: #46492e !important;
   opacity: 0.7;
 }
 
@@ -81,17 +81,17 @@
 
 /* Selected folder background - SECONDARY ACCENT */
 #folderTree treechildren::-moz-tree-row(selected) {
-  background-color: #414659 !important;
+  background-color: #46492e !important;
 }
 
 /* Selected folder text - SECONDARY ACCENT */
 #folderTree treechildren::-moz-tree-cell-text(selected) {
-  color: #dde1f9 !important;
+  color: #e3e5c1 !important;
 }
 
 /* Hovered folder row - SECONDARY ACCENT */
 #folderTree treechildren::-moz-tree-row(hover) {
-  background-color: #414659 !important;
+  background-color: #46492e !important;
   opacity: 0.5;
 }
 
@@ -104,17 +104,17 @@
 
 /* Selected message background - SECONDARY ACCENT */
 #threadTree treechildren::-moz-tree-row(selected) {
-  background-color: #414659 !important;
+  background-color: #46492e !important;
 }
 
 /* Selected message text - SECONDARY ACCENT */
 #threadTree treechildren::-moz-tree-cell-text(selected) {
-  color: #dde1f9 !important;
+  color: #e3e5c1 !important;
 }
 
 /* Unread message text - SECONDARY ACCENT */
 #threadTree treechildren::-moz-tree-cell-text(unread) {
-  color: #c1c5dd !important;
+  color: #c7c9a7 !important;
   font-weight: bold !important;
 }
 
@@ -142,8 +142,8 @@
 /* ===== BUTTONS ===== */
 /* Primary action buttons - SECONDARY ACCENT */
 button.primary {
-  background-color: #c1c5dd !important;
-  color: #2b3042 !important;
+  background-color: #c7c9a7 !important;
+  color: #2f321a !important;
   border: none !important;
 }
 
@@ -156,8 +156,8 @@ button {
 
 /* Button hover state - SECONDARY ACCENT */
 button:hover {
-  background-color: #414659 !important;
-  color: #dde1f9 !important;
+  background-color: #46492e !important;
+  color: #e3e5c1 !important;
 }
 
 /* ===== SEARCH BAR ===== */
@@ -176,7 +176,7 @@ button:hover {
 
 /* Search input focus - SECONDARY ACCENT */
 #qfb-qs-textbox:focus {
-  border-color: #c1c5dd !important;
+  border-color: #c7c9a7 !important;
 }
 
 /* ===== CONTEXT MENUS & POPUPS ===== */
@@ -194,8 +194,8 @@ menuitem {
 
 /* Hovered menu item - SECONDARY ACCENT */
 menuitem:hover {
-  background-color: #414659 !important;
-  color: #dde1f9 !important;
+  background-color: #46492e !important;
+  color: #e3e5c1 !important;
 }
 
 /* ===== STATUS BAR ===== */
@@ -214,20 +214,20 @@ scrollbar {
 
 /* Scrollbar thumb (draggable part) - SECONDARY ACCENT */
 scrollbar thumb {
-  background-color: #c1c5dd !important;
+  background-color: #c7c9a7 !important;
   opacity: 0.5;
 }
 
 /* Scrollbar thumb on hover - SECONDARY ACCENT */
 scrollbar thumb:hover {
-  background-color: #c1c5dd !important;
+  background-color: #c7c9a7 !important;
   opacity: 1;
 }
 
 /* ===== ACCENT COLORS (CSS Variables) ===== */
 :root {
-  --primary: #b5c4ff !important;
-  --secondary: #c1c5dd !important;
+  --primary: #c2cf5e !important;
+  --secondary: #c7c9a7 !important;
   --surface: #131313 !important;
   --error: #ffb4ab !important;
 }
