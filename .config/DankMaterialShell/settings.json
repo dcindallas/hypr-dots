@@ -11,7 +11,7 @@
     "gruvboxMaterial": "soft",
     "petrichor": "blue"
   },
-  "matugenScheme": "scheme-content",
+  "matugenScheme": "scheme-rainbow",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 0.9,
