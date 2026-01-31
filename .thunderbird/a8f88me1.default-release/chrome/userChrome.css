@@ -4,230 +4,230 @@
 /* ===== WINDOW & TITLE BAR ===== */
 /* Top window bar background */
 #titlebar {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* Main window background color */
 #messengerWindow {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* Window control buttons area (min/max/close) */
 #titlebar-buttonbox {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* ===== TOOLBAR AREAS ===== */
 /* Main horizontal toolbar (compose, reply buttons) */
 #mail-bar3 {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* Unified toolbar (newer Thunderbird versions) */
 #unifiedToolbar {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
 }
 
 /* Tab bar background */
 #tabs-toolbar {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* Menu bar (File, Edit, View, etc.) */
 #toolbar-menubar {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
 }
 
 /* ===== TABS ===== */
 /* Inactive tab background */
 .tab-background {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* Active/selected tab background - SECONDARY ACCENT */
 .tab-background[selected="true"] {
-  background-color: #46492e !important;
+  background-color: #45464f !important;
 }
 
 /* Tab text color (inactive) */
 .tab-text {
-  color: #c6c6c6 !important;
+  color: #c8c6c7 !important;
 }
 
 /* Tab text color (active) - SECONDARY ACCENT */
 .tab-background[selected="true"] .tab-text {
-  color: #e3e5c1 !important;
+  color: #e2e1ec !important;
 }
 
 /* Tab close button */
 .tab-close-button {
-  color: #c6c6c6 !important;
+  color: #c8c6c7 !important;
 }
 
 /* Tab hover state - SECONDARY ACCENT */
 .tab-background:hover {
-  background-color: #46492e !important;
+  background-color: #45464f !important;
   opacity: 0.7;
 }
 
 /* ===== SIDEBAR & FOLDER PANE ===== */
 /* Folder tree/list background (left sidebar) */
 #folderTree {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
 }
 
 /* Selected folder background - SECONDARY ACCENT */
 #folderTree treechildren::-moz-tree-row(selected) {
-  background-color: #46492e !important;
+  background-color: #45464f !important;
 }
 
 /* Selected folder text - SECONDARY ACCENT */
 #folderTree treechildren::-moz-tree-cell-text(selected) {
-  color: #e3e5c1 !important;
+  color: #e2e1ec !important;
 }
 
 /* Hovered folder row - SECONDARY ACCENT */
 #folderTree treechildren::-moz-tree-row(hover) {
-  background-color: #46492e !important;
+  background-color: #45464f !important;
   opacity: 0.5;
 }
 
 /* ===== MESSAGE LIST ===== */
 /* Message list background (center pane) */
 #threadTree {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
 }
 
 /* Selected message background - SECONDARY ACCENT */
 #threadTree treechildren::-moz-tree-row(selected) {
-  background-color: #46492e !important;
+  background-color: #45464f !important;
 }
 
 /* Selected message text - SECONDARY ACCENT */
 #threadTree treechildren::-moz-tree-cell-text(selected) {
-  color: #e3e5c1 !important;
+  color: #e2e1ec !important;
 }
 
 /* Unread message text - SECONDARY ACCENT */
 #threadTree treechildren::-moz-tree-cell-text(unread) {
-  color: #c7c9a7 !important;
+  color: #c6c6d0 !important;
   font-weight: bold !important;
 }
 
 /* Message list column headers */
 #threadTree treecol {
-  background-color: #131313 !important;
-  color: #c6c6c6 !important;
-  border-bottom: 1px solid #919191 !important;
+  background-color: #131315 !important;
+  color: #c8c6c7 !important;
+  border-bottom: 1px solid #929092 !important;
 }
 
 /* ===== MESSAGE READING PANE ===== */
 /* Message preview/reading pane background */
 #messagepanebox {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
 }
 
 /* Message header area (from, to, subject) */
 #messageHeader {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
-  border-bottom: 1px solid #919191 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
+  border-bottom: 1px solid #929092 !important;
 }
 
 /* ===== BUTTONS ===== */
 /* Primary action buttons - SECONDARY ACCENT */
 button.primary {
-  background-color: #c7c9a7 !important;
-  color: #2f321a !important;
+  background-color: #c6c6d0 !important;
+  color: #2e3038 !important;
   border: none !important;
 }
 
 /* Regular buttons */
 button {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
-  border: 1px solid #919191 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
+  border: 1px solid #929092 !important;
 }
 
 /* Button hover state - SECONDARY ACCENT */
 button:hover {
-  background-color: #46492e !important;
-  color: #e3e5c1 !important;
+  background-color: #45464f !important;
+  color: #e2e1ec !important;
 }
 
 /* ===== SEARCH BAR ===== */
 /* Quick filter/search bar */
 #quick-filter-bar {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
 }
 
 /* Search input field */
 #qfb-qs-textbox {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
-  border: 1px solid #919191 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
+  border: 1px solid #929092 !important;
 }
 
 /* Search input focus - SECONDARY ACCENT */
 #qfb-qs-textbox:focus {
-  border-color: #c7c9a7 !important;
+  border-color: #c6c6d0 !important;
 }
 
 /* ===== CONTEXT MENUS & POPUPS ===== */
 /* Right-click context menus */
 menupopup {
-  background-color: #131313 !important;
-  color: #e2e2e2 !important;
-  border: 1px solid #919191 !important;
+  background-color: #131315 !important;
+  color: #e5e2e3 !important;
+  border: 1px solid #929092 !important;
 }
 
 /* Menu items */
 menuitem {
-  color: #e2e2e2 !important;
+  color: #e5e2e3 !important;
 }
 
 /* Hovered menu item - SECONDARY ACCENT */
 menuitem:hover {
-  background-color: #46492e !important;
-  color: #e3e5c1 !important;
+  background-color: #45464f !important;
+  color: #e2e1ec !important;
 }
 
 /* ===== STATUS BAR ===== */
 /* Bottom status bar */
 #status-bar {
-  background-color: #131313 !important;
-  color: #c6c6c6 !important;
-  border-top: 1px solid #919191 !important;
+  background-color: #131315 !important;
+  color: #c8c6c7 !important;
+  border-top: 1px solid #929092 !important;
 }
 
 /* ===== SCROLLBARS ===== */
 /* Scrollbar track (background) */
 scrollbar {
-  background-color: #131313 !important;
+  background-color: #131315 !important;
 }
 
 /* Scrollbar thumb (draggable part) - SECONDARY ACCENT */
 scrollbar thumb {
-  background-color: #c7c9a7 !important;
+  background-color: #c6c6d0 !important;
   opacity: 0.5;
 }
 
 /* Scrollbar thumb on hover - SECONDARY ACCENT */
 scrollbar thumb:hover {
-  background-color: #c7c9a7 !important;
+  background-color: #c6c6d0 !important;
   opacity: 1;
 }
 
 /* ===== ACCENT COLORS (CSS Variables) ===== */
 :root {
-  --primary: #c2cf5e !important;
-  --secondary: #c7c9a7 !important;
-  --surface: #131313 !important;
+  --primary: #c3c5d6 !important;
+  --secondary: #c6c6d0 !important;
+  --surface: #131315 !important;
   --error: #ffb4ab !important;
 }
