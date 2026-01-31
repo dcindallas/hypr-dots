@@ -1,6 +1,6 @@
 # hypr-dots 🚀
 
-A high-performance, Material 3-themed Arch Linux environment powered by **Hyprland** and **DMS**.
+A high-performance, Material 3-themed Arch Linux environment powered by **Hyprland** and **DMS**. You can find the **wiki here!** [hypr-dot wiki](https://github.com/dcindallas/hypr-dots/wiki)
 
 <img width="2958" height="1840" alt="dank-void-002" src="https://github.com/user-attachments/assets/0b68b543-3b3e-4087-a6f4-8c59c4496cc6" />
 
