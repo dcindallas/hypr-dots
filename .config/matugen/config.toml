@@ -31,3 +31,7 @@ output_path = '/home/duane/color-files/colors.css'
 [templates.kitty-color]
 input_path = "~/.config/matugen/templates/kitty-colors.conf"
 output_path = "~/.config/kitty/dank16-colors.conf"
+
+[templates.dank-color-geany]
+input_path = '/home/duane/.config/matugen/templates/templates.dank-color-geany'
+output_path = '/home/duane/.config/geany/colorschemes/dank-color-geany.conf'

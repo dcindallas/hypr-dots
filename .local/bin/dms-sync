@@ -19,10 +19,14 @@ WATCH_DIR="$HOME/.config/hypr/dms"
     pkill -USR1 kitty && echo "kitty colors synced: $(date +%H:%M:%S)"
 	pkill -USR1 kitty-dropdown && echo "kitty-dropdown colors synced: $(date +%H:%M:%S)"
    
+    # Reload geany theme by toggling it
+    #pkill -USR1 geany && echo "geany colors synced: $(date +%H:%M:%S)"
+    
     # Reload GTK theme by toggling it
     CURRENT_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme | tr -d "'")
     gsettings set org.gnome.desktop.interface gtk-theme "" && \
     gsettings set org.gnome.desktop.interface gtk-theme "$CURRENT_THEME" && \
     echo "gtk-theme synced: $(date +%H:%M:%S)"
     
+
 done
