@@ -39,3 +39,7 @@ output_path = '/home/duane/.config/geany/colorschemes/dank-color-geany.conf'
 [templates.micro]
 input_path = '~/.config/matugen/templates/micro-colors.micro'
 output_path = '~/.config/micro/colorschemes/dank-matugen.micro'
+
+[templates.ghostty]
+input_path = '~/.config/matugen/templates/ghostty-colors.conf'
+output_path = '~/.config/ghostty/themes/dank-matugen'
