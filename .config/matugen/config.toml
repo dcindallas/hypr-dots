@@ -5,7 +5,7 @@ input_path = '/home/duane/.config/matugen/templates/cava.conf'
 output_path = '/home/duane/.config/cava/config'
 
 [templates.thunderbird]
-input_path = '/home/duane/.config/matugen/templates/thunderbird-userChrome.css'
+input_path = '/home/duane/.config/matugen/templates/thunderbird.css'
 output_path = '/home/duane/.thunderbird/a8f88me1.default-release/chrome/userChrome.css'
 
 [templates.geany]
@@ -29,9 +29,11 @@ input_path = '/home/duane/.config/matugen/templates/dank-color-finder'
 output_path = '/home/duane/color-files/colors.css'
 
 [templates.kitty-color]
-input_path = "~/.config/matugen/templates/kitty-colors.conf"
-output_path = "~/.config/kitty/dank16-colors.conf"
+input_path = "/home/duane/.config/matugen/templates/kitty-colors.conf"
+output_path = "/home/duane/.config/kitty/dank16-colors.conf"
 
 [templates.dank-color-geany]
-input_path = '/home/duane/.config/matugen/templates/templates.dank-color-geany'
+input_path = '/home/duane/.config/matugen/templates/geany.conf'
 output_path = '/home/duane/.config/geany/colorschemes/dank-color-geany.conf'
+
+
