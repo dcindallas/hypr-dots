@@ -1,0 +1,6 @@
+[Unit]
+Description=Sync dotfiles to GitHub
+
+[Service]
+Type=oneshot
+ExecStart=/home/duane/local/bin/hyper-push

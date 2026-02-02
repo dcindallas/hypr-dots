@@ -1,0 +1,113 @@
+/* Thunderbird userChrome - Flat Minimalist UI for Dank Linux DMS */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ===== GLOBAL RESET: REMOVE ALL BORDERS & SCROLLBARS ===== */
+* {
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  scrollbar-width: none !important;
+}
+
+/* THE "BYE BYE" SCROLLBAR SECTION */
+scrollbar, 
+scrollcorner, 
+scrollbarbutton {
+  display: none !important;
+  visibility: collapse !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* ===== UNIFIED BACKGROUNDS (KILL THE MISMATCHED BROWN) ===== */
+/* This forces the folder pane, message list, and reading pane to match the DMS surface color */
+#titlebar,
+#messengerWindow,
+#titlebar-buttonbox,
+#folderTree, 
+#threadTree, 
+#messagepanebox, 
+#calendar-view-box,
+#addressbookWindow,
+.tabmail-tabbox,
+#sidebar-box,
+#navigation-pane,
+#calendar-task-box, 
+#calendar-list-box-container,
+.calendar-item-flex,
+#abstract-view-box {
+  background-color: {{colors.surface.default.hex}} !important;
+  color: {{colors.on_surface.default.hex}} !important;
+  appearance: none !important;
+}
+
+/* Specific fix for the "Bar above reading pane" (Message Header) */
+#messageHeader, 
+.message-header-container,
+#status-info_container,
+#quick-filter-bar {
+  background-color: {{colors.surface.default.hex}} !important;
+  color: {{colors.on_surface.default.hex}} !important;
+  border: none !important;
+}
+
+/* ===== TOOLBARS & TABS ===== */
+#mail-bar3, #unifiedToolbar, #tabs-toolbar, #toolbar-menubar {
+  background-color: {{colors.surface.default.hex}} !important;
+  color: {{colors.on_surface.default.hex}} !important;
+}
+
+.tab-background {
+  background-color: {{colors.surface.default.hex}} !important;
+}
+
+/* Active Tab: Accent text color only */
+.tab-background[selected="true"] .tab-text {
+  color: {{colors.primary.default.hex}} !important;
+  font-weight: bold !important;
+}
+
+/* ===== CALENDAR GRID (1px Line Restore) ===== */
+.calendar-month-day-box-current-month,
+.calendar-month-day-box-day-off,
+.calendar-month-day-box-other-month {
+  border: 1px solid {{colors.outline_variant.default.hex}} !important;
+  margin: -1px 0 0 -1px !important;
+}
+
+.calendar-month-day-box-day-off {
+  background-color: {{colors.surface_variant.default.hex}} !important;
+  opacity: 0.15;
+}
+
+/* ===== LIST SELECTIONS & ACCENTS ===== */
+#folderTree treechildren::-moz-tree-row(selected),
+#threadTree treechildren::-moz-tree-row(selected),
+.addressbook-results-row[selected="true"] {
+  background-color: {{colors.surface_variant.default.hex}} !important;
+}
+
+/* Unread Messages: Primary Accent */
+#threadTree treechildren::-moz-tree-cell-text(unread) {
+  color: {{colors.primary.default.hex}} !important;
+  font-weight: bold !important;
+}
+
+/* ===== BUTTONS & INPUTS ===== */
+button, #qfb-qs-textbox, .button {
+  background-color: {{colors.surface_variant.default.hex}} !important;
+  color: {{colors.on_surface.default.hex}} !important;
+  border-radius: 4px !important;
+}
+
+#qfb-qs-textbox:focus {
+  outline: 1px solid {{colors.primary.default.hex}} !important;
+}
+
+/* ===== SPLITTERS (INVISIBLE SEAMS) ===== */
+splitter, .tree-splitter, #threadPaneSplitter, #sidebar-splitter {
+  appearance: none !important;
+  background-color: {{colors.surface.default.hex}} !important;
+  width: 0px !important;
+  border: none !important;
+}

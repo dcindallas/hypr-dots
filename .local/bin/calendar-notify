@@ -1,0 +1,21 @@
+#!/bin/bash
+# Calendar notification script for khal - 1 hour warning only
+
+# Morning summary at 8 AM
+CURRENT_HOUR=$(date +%H)
+if [ "$CURRENT_HOUR" -eq 08 ]; then
+    TODAY_EVENTS=$(khal list today tomorrow --format "{start-time} {title}" 2>/dev/null)
+    
+    if [ -n "$TODAY_EVENTS" ]; then
+        notify-send "📅 Today's Schedule" "$TODAY_EVENTS" --urgency=normal --expire-time=30000
+    fi
+fi
+
+# Check for events in 1 hour (55-65 min from now)
+START_1H=$(date -d "+55 minutes" "+%m/%d/%Y %I:%M %p")
+END_1H=$(date -d "+65 minutes" "+%m/%d/%Y %I:%M %p")
+EVENTS_1H=$(khal list "$START_1H" "$END_1H" --format "{start-time} {title}" 2>/dev/null)
+
+if [ -n "$EVENTS_1H" ]; then
+    notify-send "📅 Event in 1 Hour" "$EVENTS_1H" --urgency=normal --expire-time=15000
+fi

@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+INBOX="${1:-$HOME/Music/INBOX}"
+LIBDIR="$HOME/Music"
+BACKUPDIR="$HOME/.local/share/music-update/originals"
+
+echo "==> Inbox:  $INBOX"
+echo "==> Library: $LIBDIR"
+echo "==> Backup:  $BACKUPDIR"
+echo
+
+# 1) Import/organize/tag/art via beets
+echo "==> Beets import..."
+/usr/bin/beet import "$INBOX"
+
+# 2) Convert anything not .m4a to .m4a (AAC), then move original to backup
+echo
+echo "==> Converting non-m4a files in library to m4a..."
+find "$LIBDIR" -type f \
+  \( -iname "*.flac" -o -iname "*.wav" -o -iname "*.mp3" -o -iname "*.opus" -o -iname "*.ogg" -o -iname "*.webm" \) \
+  -print0 | while IFS= read -r -d '' f; do
+    out="${f%.*}.m4a"
+    tmp="${out}.tmp"
+
+    # Skip if output already exists
+    if [[ -f "$out" ]]; then
+      echo "SKIP (already exists): $out"
+      continue
+    fi
+
+    echo "CONVERT: $f"
+    ffmpeg -hide_banner -loglevel error -y \
+      -i "$f" -vn -c:a aac -b:a 256k \
+      "$tmp"
+
+    mv -f "$tmp" "$out"
+
+    # Move original to backup (not delete)
+    rel="${f#$LIBDIR/}"
+    mkdir -p "$BACKUPDIR/$(dirname "$rel")"
+    mv -f "$f" "$BACKUPDIR/$rel"
+done
+
+echo
+echo "==> Done."
+echo "Originals moved to: $BACKUPDIR"

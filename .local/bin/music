@@ -1,0 +1,2 @@
+#!/bin/bash
+kitty --class music-player --config ~/.config/kitty/music.conf ncmpcpp

@@ -1,0 +1,36 @@
+#!/bin/bash
+# Display DankColors with visual previews
+
+COLORS_FILE="$HOME/color-files/colors.css"
+
+if [[ ! -f "$COLORS_FILE" ]]; then
+    echo "Error: colors.css not found at $COLORS_FILE"
+    echo "Run 'matugen generate' first to create the color palette"
+    exit 1
+fi
+
+echo "=== DankColors Complete Palette ==="
+echo ""
+
+# Read and display each line with color blocks for hex values
+while IFS= read -r line; do
+    # Check if line contains a hex color
+    if [[ "$line" =~ \#[0-9a-fA-F]{6} ]]; then
+        # Extract the hex color
+        hex=$(echo "$line" | grep -oE '#[0-9a-fA-F]{6}')
+        
+        # Convert hex to RGB
+        r=$((16#${hex:1:2}))
+        g=$((16#${hex:3:2}))
+        b=$((16#${hex:5:2}))
+        
+        # Print line with color block at the end
+        printf "%s " "$line"
+        echo -e "\033[48;2;${r};${g};${b}m          \033[0m"
+    else
+        # Print non-color lines as-is
+        echo "$line"
+    fi
+done < "$COLORS_FILE"
+
+echo ""

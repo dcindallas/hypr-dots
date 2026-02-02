@@ -1,0 +1,51 @@
+=== DankColors Complete Palette ===
+
+DANK16 COLORS (Terminal/Editor):
+color0  (black)         {{dank16.color0.default.hex}}
+color1  (red)           {{dank16.color1.default.hex}}
+color2  (green)         {{dank16.color2.default.hex}}
+color3  (yellow)        {{dank16.color3.default.hex}}
+color4  (blue)          {{dank16.color4.default.hex}}
+color5  (magenta)       {{dank16.color5.default.hex}}
+color6  (cyan)          {{dank16.color6.default.hex}}
+color7  (white)         {{dank16.color7.default.hex}}
+color8  (bright black)  {{dank16.color8.default.hex}}
+color9  (bright red)    {{dank16.color9.default.hex}}
+color10 (bright green)  {{dank16.color10.default.hex}}
+color11 (bright yellow) {{dank16.color11.default.hex}}
+color12 (bright blue)   {{dank16.color12.default.hex}}
+color13 (bright magenta){{dank16.color13.default.hex}}
+color14 (bright cyan)   {{dank16.color14.default.hex}}
+color15 (bright white)  {{dank16.color15.default.hex}}
+
+MATERIAL DESIGN COLORS:
+Primary:                {{colors.primary.default.hex}}
+On Primary:             {{colors.on_primary.default.hex}}
+Primary Container:      {{colors.primary_container.default.hex}}
+On Primary Container:   {{colors.on_primary_container.default.hex}}
+
+Secondary:              {{colors.secondary.default.hex}}
+On Secondary:           {{colors.on_secondary.default.hex}}
+Secondary Container:    {{colors.secondary_container.default.hex}}
+On Secondary Container: {{colors.on_secondary_container.default.hex}}
+
+Tertiary:               {{colors.tertiary.default.hex}}
+On Tertiary:            {{colors.on_tertiary.default.hex}}
+Tertiary Container:     {{colors.tertiary_container.default.hex}}
+On Tertiary Container:  {{colors.on_tertiary_container.default.hex}}
+
+Error:                  {{colors.error.default.hex}}
+On Error:               {{colors.on_error.default.hex}}
+Error Container:        {{colors.error_container.default.hex}}
+On Error Container:     {{colors.on_error_container.default.hex}}
+
+Surface:                {{colors.surface.default.hex}}
+On Surface:             {{colors.on_surface.default.hex}}
+Surface Variant:        {{colors.surface_variant.default.hex}}
+On Surface Variant:     {{colors.on_surface_variant.default.hex}}
+
+Background:             {{colors.background.default.hex}}
+On Background:          {{colors.on_background.default.hex}}
+
+Outline:                {{colors.outline.default.hex}}
+Outline Variant:        {{colors.outline_variant.default.hex}}

@@ -1,0 +1,29 @@
+#!/usr/bin/env fish
+# The Final "Dank" Sync Script
+
+# Define the Bare Repo command
+set -l GIT_CMD git --git-dir=$HOME/hypr-dots --work-tree=$HOME
+
+# Stage everything (respects your 'exclude' whitelist/blacklist)
+$GIT_CMD add .
+
+# Check if there is anything to actually commit
+if not $GIT_CMD diff-index --quiet HEAD --
+    echo "Syncing new Rice changes..."
+    
+    if $GIT_CMD commit -m "Rice Sync Update - $(date +%Y-%m-%d)"
+        # Pull with rebase to keep history clean
+        if $GIT_CMD pull --rebase origin main
+            # Push to GitHub
+            if $GIT_CMD push origin main
+                notify-send "Rice Sync" "GitHub backup successful ✓"
+            else
+                notify-send -u critical "Rice Sync" "Push failed - Check connection"
+            end
+        else
+            notify-send -u critical "Rice Sync" "Pull failed - Resolve conflicts manually"
+        end
+    end
+else
+    echo "No changes to sync."
+end

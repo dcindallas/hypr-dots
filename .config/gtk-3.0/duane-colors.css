@@ -1,0 +1,40 @@
+/*
+* GTK Colors
+* Generated with Matugen - DuaneLinux Flat Theme
+*/
+
+/* Destructive/Error colors */
+@define-color destructive_bg_color #ffb4ab;
+@define-color destructive_fg_color #690005;
+@define-color error_bg_color #ffb4ab;
+@define-color error_fg_color #690005;
+
+/* Accent colors */
+@define-color accent_fg_color #d5e5ec;
+@define-color accent_bg_color #bac9d0;
+
+/* FLAT BACKGROUNDS - All use surface */
+@define-color window_bg_color #121314;
+@define-color window_fg_color #e3e2e2;
+@define-color view_bg_color #121314;
+@define-color view_fg_color #e3e2e2;
+@define-color headerbar_bg_color #121314;
+@define-color headerbar_fg_color #e3e2e2;
+@define-color sidebar_bg_color #121314;
+@define-color sidebar_fg_color #e3e2e2;
+@define-color secondary_sidebar_bg_color #121314;
+@define-color secondary_sidebar_fg_color #e3e2e2;
+
+/* Card/Dialog backgrounds - slight elevation */
+@define-color card_bg_color #1f2020;
+@define-color card_fg_color #e3e2e2;
+@define-color dialog_bg_color #1f2020;
+@define-color dialog_fg_color #e3e2e2;
+@define-color popover_bg_color #1f2020;
+@define-color popover_fg_color #e3e2e2;
+
+/* Buttons and interactive elements */
+@define-color success_bg_color #b3cad5;
+@define-color success_fg_color #1e333b;
+@define-color warning_bg_color #bfc8cc;
+@define-color warning_fg_color #2a3235;

@@ -1,0 +1,36 @@
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = ~/Music
+mpd_crossfade_time = 2
+
+##### Visualizer #####
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_look = ●┃
+visualizer_color = {{dank16.color4.default.hex}}, {{dank16.color6.default.hex}}, {{dank16.color2.default.hex}}, {{dank16.color3.default.hex}}, {{dank16.color5.default.hex}}, {{dank16.color1.default.hex}}
+
+##### Display #####
+song_list_format = "{{%a - %t}|{%f}}{$R%l}"
+song_status_format = "{{%a - %t}|{%f}}"
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+playlist_display_mode = classic
+autocenter_mode = yes
+progressbar_look = "─╼ "
+header_visibility = no
+statusbar_visibility = yes
+titles_visibility = no
+enable_window_title = no
+
+##### Colors #####
+colors_enabled = yes
+empty_tag_color = {{dank16.color8.default.hex}}
+main_window_color = {{dank16.color7.default.hex}}
+color1 = {{dank16.color15.default.hex}}
+color2 = {{dank16.color2.default.hex}}
+progressbar_color = {{dank16.color8.default.hex}}
+progressbar_elapsed_color = {{dank16.color12.default.hex}}
+statusbar_color = {{dank16.color7.default.hex}}
+window_border_color = {{dank16.color3.default.hex}}

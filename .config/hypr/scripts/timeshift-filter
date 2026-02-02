@@ -1,0 +1,41 @@
+#!/bin/bash
+# Logic: Protect the Arch System + custom bin scripts + specific configs.
+# This script configures the Timeshift include/exclude patterns.
+
+cat <<EOF > ~/timeshift_filters.txt
+# --- INCLUDES ---
++ /root/**
++ /home/duane/.local/bin/**
++ /home/duane/.config/hypr/**
++ /home/duane/.config/DankMaterialShell/**
++ /home/duane/.config/kitty/**
++/home/duane/.config/environment.d/**
++/home/duane/.config/fish/**
++/home/duane/.config/matugen/**
++/home/duane/.config/starship/**
++/home/duane/.config/swayimg/**
++/home/duane/.config/systemd/**
+
++/home/duane/Pictures/**
++ /home/duane/.bashrc
++ /home/duane/.zshrc
++ /home/duane/color-files/**
++ /home/duane/Documents/**
++ /home/duane/projects/**
++ /home/duane/.Xresources
++ /home/duane/.nano/**
+
+# --- EXCLUDES ---
+- /home/duane/.cache/**
+- /home/duane/Downloads/**
+- /home/duane/Videos/**
+- /home/duane/Music/**
+- /home/duane/go/**
+- /home/duane/yay/**
+- /var/cache/pacman/pkg/**
+- /home/duane/**
+- /root/**
+EOF
+
+echo "Filter list generated at ~/timeshift_filters.txt"
+echo "Go to Timeshift > Settings > Filters > Import and select this file."

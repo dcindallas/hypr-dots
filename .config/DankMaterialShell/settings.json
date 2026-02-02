@@ -11,10 +11,10 @@
     "gruvboxMaterial": "soft",
     "petrichor": "blue"
   },
-  "matugenScheme": "scheme-tonal-spot",
+  "matugenScheme": "scheme-neutral",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.9,
+  "popupTransparency": 1,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sc",
   "widgetColorMode": "default",
