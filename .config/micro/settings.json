@@ -1,0 +1,8 @@
+{
+    "colorscheme": "simple",
+    "gutter": false,
+    "tabsize": 4,
+    "tabstospaces": true,
+    "mkparents": true,
+    "mouse": true
+}
