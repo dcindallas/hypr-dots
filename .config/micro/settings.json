@@ -1,8 +1,11 @@
 {
-    "colorscheme": "simple",
+    "colorscheme": "dank-matugen",
     "gutter": false,
     "tabsize": 4,
     "tabstospaces": true,
     "mkparents": true,
-    "mouse": true
+    "mouse": true,
+    "infobar": true,
+    "statusline": true,
+    "softwrap": true
 }
