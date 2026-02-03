@@ -1,92 +1,96 @@
 [theme_info]
 name=DankColors Matugen
-description=Auto-generated DankColors theme based on Base16 Bright
-version=3
+description=Auto-generated DankColors theme with improved readability
+version=4
 author=Duane
-url=
+author=Duane
 compat=1.22;1.23;1.23.1;1.24
 
 [named_styles]
+# Using color15 (White) for main text and color0 (Black) for background
 default={{dank16.color15.default.hex}};{{dank16.color0.default.hex}};false;false
 error={{dank16.color1.default.hex}}
 
 # Editor Styles
 #-------------------------------------------------------------------------------
-selection={{dank16.color8.default.hex}};{{dank16.color7.default.hex}};false;true
+# Selection: Using color5 (muted magenta) instead of color8 to reduce brightness
+selection={{dank16.color5.default.hex}};{{dank16.color15.default.hex}};false;true
 current_line=;{{dank16.color0.default.hex}};true;false
-brace_good={{dank16.color3.default.hex}};;true;false
-brace_bad={{dank16.color1.default.hex}};{{dank16.color8.default.hex}};true;false
+brace_good={{dank16.color10.default.hex}};;true;false
+brace_bad={{dank16.color1.default.hex}};{{dank16.color5.default.hex}};true;false
 margin_line_number={{dank16.color8.default.hex}};{{dank16.color0.default.hex}};true;false
 margin_folding={{dank16.color8.default.hex}}
-fold_symbol_highlight={{dank16.color8.default.hex}}
+fold_symbol_highlight={{dank16.color14.default.hex}}
 indent_guide={{dank16.color8.default.hex}}
-caret={{dank16.color7.default.hex}}
+caret={{dank16.color15.default.hex}}
 marker_line={{dank16.color15.default.hex}}
-marker_search={{dank16.color15.default.hex}};{{dank16.color2.default.hex}};false;false
-marker_mark={{dank16.color15.default.hex}};{{dank16.color2.default.hex}};
-call_tips={{dank16.color8.default.hex}};;false;false
+marker_search={{dank16.color0.default.hex}};{{dank16.color11.default.hex}};false;false
+marker_mark={{dank16.color0.default.hex}};{{dank16.color2.default.hex}};
+call_tips={{dank16.color15.default.hex}};{{dank16.color8.default.hex}};false;false
 white_space={{dank16.color8.default.hex}};;true;false
 
 # Programming languages
 #-------------------------------------------------------------------------------
-comment={{dank16.color8.default.hex}}
-comment_doc={{dank16.color8.default.hex}}
-comment_line={{dank16.color8.default.hex}}
-comment_line_doc={{dank16.color8.default.hex}}
-comment_doc_keyword={{dank16.color8.default.hex}};;true;false
-comment_doc_keyword_error={{dank16.color8.default.hex}};;false;true
+# Comments: Switched from color8 to color6 (Cyan) for higher saturation/readability
+comment={{dank16.color6.default.hex}}
+comment_doc={{dank16.color6.default.hex}}
+comment_line={{dank16.color6.default.hex}}
+comment_line_doc={{dank16.color6.default.hex}}
+comment_doc_keyword={{dank16.color6.default.hex}};;true;false
+comment_doc_keyword_error={{dank16.color1.default.hex}};;false;true
 
-number={{dank16.color2.default.hex}}
+# High Saturation Highlights
+number={{dank16.color10.default.hex}}
 number_1={{dank16.color9.default.hex}}
 number_2={{dank16.color9.default.hex}}
 
-type={{dank16.color3.default.hex}};;true
-class={{dank16.color3.default.hex}};;true
-function={{dank16.color4.default.hex}};;false;false
+type={{dank16.color11.default.hex}};;true
+class={{dank16.color11.default.hex}};;true
+function={{dank16.color12.default.hex}};;false;false
 parameter={{dank16.color15.default.hex}}
 
 keyword={{dank16.color1.default.hex}};;true;false
-keyword_1={{dank16.color5.default.hex}};;false;false
+keyword_1={{dank16.color14.default.hex}};;false;false
 keyword_2={{dank16.color9.default.hex}};;false;false
 keyword_3={{dank16.color7.default.hex}};;false;false
 keyword_4={{dank16.color9.default.hex}};;false;true
 
-identifier={{dank16.color7.default.hex}};;false;false
-identifier_1={{dank16.color7.default.hex}};;false;false
-identifier_2={{dank16.color7.default.hex}};;false;false
-identifier_3={{dank16.color4.default.hex}};;true;false
-identifier_4={{dank16.color5.default.hex}};;false;false
+identifier={{dank16.color15.default.hex}};;false;false
+identifier_1={{dank16.color15.default.hex}};;false;false
+identifier_2={{dank16.color15.default.hex}};;false;false
+identifier_3={{dank16.color12.default.hex}};;true;false
+identifier_4={{dank16.color14.default.hex}};;false;false
 
-string={{dank16.color9.default.hex}}
-string_1={{dank16.color2.default.hex}}
-string_2={{dank16.color2.default.hex}}
-string_3={{dank16.color7.default.hex}}
-string_4={{dank16.color4.default.hex}}
-string_eol={{dank16.color5.default.hex}};;false;true
+string={{dank16.color2.default.hex}}
+string_1={{dank16.color10.default.hex}}
+string_2={{dank16.color10.default.hex}}
+string_3={{dank16.color15.default.hex}}
+string_4={{dank16.color12.default.hex}}
+string_eol={{dank16.color1.default.hex}};;false;true
 
 character=string_1
 backtick={{dank16.color3.default.hex}}
 here_doc={{dank16.color3.default.hex}}
 scalar={{dank16.color3.default.hex}}
 label={{dank16.color15.default.hex}};;true;false
-preprocessor={{dank16.color4.default.hex}}
+preprocessor={{dank16.color14.default.hex}}
 regex=number_1
-operator={{dank16.color6.default.hex}};;false;false
-decorator={{dank16.color4.default.hex}};;false;false
+operator={{dank16.color15.default.hex}};;false;false
+decorator={{dank16.color14.default.hex}};;false;false
 other={{dank16.color1.default.hex}}
 
 # Markup-type languages
 #-------------------------------------------------------------------------------
-tag={{dank16.color3.default.hex}};;true;false
+tag={{dank16.color11.default.hex}};;true;false
 tag_unknown={{dank16.color1.default.hex}};;true;false
-tag_end={{dank16.color3.default.hex}};;false;false
+tag_end={{dank16.color11.default.hex}};;false;false
 attribute={{dank16.color9.default.hex}};;false;false
-attribute_unknown={{dank16.color2.default.hex}};;false;false
-value={{dank16.color4.default.hex}}
-entity={{dank16.color3.default.hex}}
+attribute_unknown={{dank16.color10.default.hex}};;false;false
+value={{dank16.color12.default.hex}}
+entity={{dank16.color11.default.hex}}
 
 # Diff
 #-------------------------------------------------------------------------------
-line_added={{dank16.color2.default.hex}}
+line_added={{dank16.color10.default.hex}}
 line_removed={{dank16.color1.default.hex}}
-line_changed={{dank16.color4.default.hex}}
+line_changed={{dank16.color12.default.hex}}

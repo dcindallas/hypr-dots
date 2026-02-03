@@ -11,7 +11,7 @@
 
 /* Accent colors */
 @define-color accent_fg_color #d5e5ec;
-@define-color accent_bg_color #bac9d0;
+@define-color accent_bg_color #b9c9cf;
 
 /* FLAT BACKGROUNDS - All use surface */
 @define-color window_bg_color #121314;
@@ -34,7 +34,7 @@
 @define-color popover_fg_color #e3e2e2;
 
 /* Buttons and interactive elements */
-@define-color success_bg_color #b3cad5;
-@define-color success_fg_color #1e333b;
+@define-color success_bg_color #b3cad3;
+@define-color success_fg_color #1d343b;
 @define-color warning_bg_color #bfc8cc;
-@define-color warning_fg_color #2a3235;
+@define-color warning_fg_color #293235;

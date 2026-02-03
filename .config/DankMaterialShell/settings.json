@@ -1,7 +1,7 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/kanagawaWl/theme.json",
+  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/amoledBlack/theme.json",
   "registryThemeVariants": {
     "catppuccin": {
       "flavor": "frappe",
@@ -156,7 +156,7 @@
   "weatherEnabled": true,
   "networkPreference": "auto",
   "vpnLastConnected": "",
-  "iconTheme": "Dracula",
+  "iconTheme": "ubuntu-mono-dark",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -404,7 +404,7 @@
       "widgetTransparency": 1,
       "squareCorners": false,
       "noBackground": false,
-      "gothCornersEnabled": false,
+      "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
@@ -427,8 +427,8 @@
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
-      "shadowIntensity": 25,
-      "shadowOpacity": 43,
+      "shadowIntensity": 40,
+      "shadowOpacity": 40,
       "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
     }

@@ -63,7 +63,7 @@ scrollbarbutton {
 
 /* Active Tab: Accent text color only */
 .tab-background[selected="true"] .tab-text {
-  color: #bac9d0 !important;
+  color: #b9c9cf !important;
   font-weight: bold !important;
 }
 
@@ -89,7 +89,7 @@ scrollbarbutton {
 
 /* Unread Messages: Primary Accent */
 #threadTree treechildren::-moz-tree-cell-text(unread) {
-  color: #bac9d0 !important;
+  color: #b9c9cf !important;
   font-weight: bold !important;
 }
 
@@ -101,7 +101,7 @@ button, #qfb-qs-textbox, .button {
 }
 
 #qfb-qs-textbox:focus {
-  outline: 1px solid #bac9d0 !important;
+  outline: 1px solid #b9c9cf !important;
 }
 
 /* ===== SPLITTERS (INVISIBLE SEAMS) ===== */
