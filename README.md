@@ -8,7 +8,7 @@ A high-performance, Material 3-themed Arch Linux environment powered by **Hyprla
 - **CPU**: AMD Ryzen 5 5600U with Radeon Graphics (12 threads)
 - **Display**: Acer Technologies ED273U A @ 2560x1440
 - **Features**: 10-bit Color & Variable Refresh Rate (VRR) enabled
-- **OS**: Arch Linux (Kernel 6.18.7-zen1-1-zen)
+- **OS**: Arch Linux [(Kernel 6.18.7-zen1-1-zen)](https://github.com/zen-kernel)
 
 <img width="2560" height="1440" alt="screenshot_2026-02-04_04-06-51" src="https://github.com/user-attachments/assets/55c35ff0-cf3d-429b-8bda-d790ecb23a5a" />
 
