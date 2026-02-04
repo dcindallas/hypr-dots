@@ -9,8 +9,8 @@ if [[ ! -f "$COLORS_FILE" ]]; then
     exit 1
 fi
 
-echo "=== DankColors Complete Palette ==="
-echo ""
+#echo "=== DankColors Complete Palette ==="
+#echo ""
 
 # Read and display each line with color blocks for hex values
 while IFS= read -r line; do
