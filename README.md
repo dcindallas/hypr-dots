@@ -18,7 +18,7 @@ Custom environment built on the foundation of [DankLinux](https://danklinux.com)
 - **Official Site**: [archlinux.org](https://archlinux.org)
 - **Community**: [r/unixporn](https://reddit.com/r/unixporn)
 
-<img width="2560" height="1440" alt="screenshot_2026-01-25_12-53-34" src="https://github.com/user-attachments/assets/637cd082-4bae-4d9d-a8cc-d4333d81e463" />
+<img width="2560" height="1440" alt="010" src="https://github.com/user-attachments/assets/dae67ac5-ec3f-4c8c-9641-287e6960c5c3" />
 
 ## 🎨 Components
 - **Shell**: Dank Material Shell (v1.2.3)
