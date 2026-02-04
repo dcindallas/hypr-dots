@@ -33,7 +33,7 @@ cat <<EOF > ~/timeshift_filters.txt
 - /home/duane/go/**
 - /home/duane/yay/**
 - /var/cache/pacman/pkg/**
-- /home/duane/**
+# - /home/duane/**
 - /root/**
 EOF
 
