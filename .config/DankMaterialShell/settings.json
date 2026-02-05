@@ -411,7 +411,7 @@
       "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
-      "borderEnabled": true,
+      "borderEnabled": false,
       "borderColor": "primary",
       "borderOpacity": 0.75,
       "borderThickness": 1,
