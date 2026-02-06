@@ -15,7 +15,7 @@
       "accent": "light-orange"
     }
   },
-  "matugenScheme": "scheme-neutral",
+  "matugenScheme": "scheme-fidelity",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,

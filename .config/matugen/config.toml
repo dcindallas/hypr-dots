@@ -30,7 +30,7 @@ output_path = "/home/duane/.config/kitty/dank16-colors.conf"
 
 [templates.dank-color-geany]
 input_path = '/home/duane/.config/matugen/templates/geany.conf'
-output_path = '/home/duane/.config/geany/colorschemes/material-dank.conf'
+output_path = '/home/duane/.config/geany/colorschemes/material-dank-test.conf'
 
 [templates.micro]
 input_path = '~/.config/matugen/templates/micro-colors.micro'
