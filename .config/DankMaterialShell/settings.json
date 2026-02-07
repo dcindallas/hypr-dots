@@ -15,7 +15,7 @@
       "accent": "light-orange"
     }
   },
-  "matugenScheme": "scheme-fidelity",
+  "matugenScheme": "scheme-content",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -160,7 +160,7 @@
   "weatherEnabled": true,
   "networkPreference": "auto",
   "vpnLastConnected": "",
-  "iconTheme": "Boston",
+  "iconTheme": "Dracula",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
