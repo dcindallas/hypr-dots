@@ -10,7 +10,7 @@ A high-performance, Material 3-themed Arch Linux environment powered by **Hyprla
 - **Features**: 10-bit Color & Variable Refresh Rate (VRR) enabled
 - **OS**: Arch Linux [(Kernel 6.18.7-zen1-1-zen)](https://github.com/zen-kernel)
 
-<img width="2560" height="1440" alt="screenshot_2026-02-08_14-03-56" src="https://github.com/user-attachments/assets/92c36488-ce45-4228-9514-006c17308a2f" />
+<img width="2560" height="1440" alt="screenshot_2026-02-08_14-26-18" src="https://github.com/user-attachments/assets/79aab2c2-7878-429a-8645-a36afa4d4a78" />
 
 ## ARCH Inspired by DankLinux 
 Custom environment built on the foundation of [DankLinux](https://danklinux.com). 
