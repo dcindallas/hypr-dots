@@ -33,6 +33,9 @@ input_path = '/home/duane/.config/matugen/templates/geany.conf'
 output_path = '/home/duane/.config/geany/colorschemes/material-dank-test.conf'
 
 [templates.micro]
-input_path = '~/.config/matugen/templates/micro-colors.micro'
-output_path = '~/.config/micro/colorschemes/dank-matugen.micro'
+input_path = "/home/duane/.config/matugen/templates/micro-colors.micro"
+output_path = "/home/duane/.config/micro/colorschemes/dank-matugen.micro"
 
+[templates.zed]
+input_path = "/home/duane/.config/matugen/templates/zed_settings.json"
+output_path = "/home/duane/.config/zed/settings.json"
