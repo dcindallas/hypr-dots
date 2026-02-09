@@ -133,9 +133,9 @@ fsmon = yes
 ################################################################################
 [font]
 # Font name
-name = Reddit Sans Condensed
+name = Spline Sans
 # Font size (pt)
-size = 12
+size = 14
 # Font color (RGBA)
 color = #ccccccff
 # Shadow color (RGBA)

@@ -31,7 +31,7 @@
         "text.muted": "#8a8986ff",
         "text.placeholder": "#696a6aff",
         "text.disabled": "#696a6aff",
-        "text.accent": "#5ac1feff",
+        "text.accent": "##5c84ba",
         "icon": "#bfbdb6ff",
         "icon.muted": "#8a8986ff",
         "icon.disabled": "#696a6aff",

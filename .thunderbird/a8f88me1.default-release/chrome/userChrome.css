@@ -36,8 +36,8 @@ scrollbarbutton {
 #calendar-list-box-container,
 .calendar-item-flex,
 #abstract-view-box {
-  background-color: #131314 !important;
-  color: #e4e2e3 !important;
+  background-color: #141312 !important;
+  color: #e6e2e0 !important;
   appearance: none !important;
 }
 
@@ -46,24 +46,24 @@ scrollbarbutton {
 .message-header-container,
 #status-info_container,
 #quick-filter-bar {
-  background-color: #131314 !important;
-  color: #e4e2e3 !important;
+  background-color: #141312 !important;
+  color: #e6e2e0 !important;
   border: none !important;
 }
 
 /* ===== TOOLBARS & TABS ===== */
 #mail-bar3, #unifiedToolbar, #tabs-toolbar, #toolbar-menubar {
-  background-color: #131314 !important;
-  color: #e4e2e3 !important;
+  background-color: #141312 !important;
+  color: #e6e2e0 !important;
 }
 
 .tab-background {
-  background-color: #131314 !important;
+  background-color: #141312 !important;
 }
 
 /* Active Tab: Accent text color only */
 .tab-background[selected="true"] .tab-text {
-  color: #bcc8d6 !important;
+  color: #cac6bc !important;
   font-weight: bold !important;
 }
 
@@ -71,12 +71,12 @@ scrollbarbutton {
 .calendar-month-day-box-current-month,
 .calendar-month-day-box-day-off,
 .calendar-month-day-box-other-month {
-  border: 1px solid #44474b !important;
+  border: 1px solid #48473f !important;
   margin: -1px 0 0 -1px !important;
 }
 
 .calendar-month-day-box-day-off {
-  background-color: #44474b !important;
+  background-color: #48473f !important;
   opacity: 0.15;
 }
 
@@ -84,30 +84,30 @@ scrollbarbutton {
 #folderTree treechildren::-moz-tree-row(selected),
 #threadTree treechildren::-moz-tree-row(selected),
 .addressbook-results-row[selected="true"] {
-  background-color: #44474b !important;
+  background-color: #48473f !important;
 }
 
 /* Unread Messages: Primary Accent */
 #threadTree treechildren::-moz-tree-cell-text(unread) {
-  color: #bcc8d6 !important;
+  color: #cac6bc !important;
   font-weight: bold !important;
 }
 
 /* ===== BUTTONS & INPUTS ===== */
 button, #qfb-qs-textbox, .button {
-  background-color: #44474b !important;
-  color: #e4e2e3 !important;
+  background-color: #48473f !important;
+  color: #e6e2e0 !important;
   border-radius: 4px !important;
 }
 
 #qfb-qs-textbox:focus {
-  outline: 1px solid #bcc8d6 !important;
+  outline: 1px solid #cac6bc !important;
 }
 
 /* ===== SPLITTERS (INVISIBLE SEAMS) ===== */
 splitter, .tree-splitter, #threadPaneSplitter, #sidebar-splitter {
   appearance: none !important;
-  background-color: #131314 !important;
+  background-color: #141312 !important;
   width: 0px !important;
   border: none !important;
 }

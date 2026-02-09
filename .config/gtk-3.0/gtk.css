@@ -1,29 +1,47 @@
-
 @import url("dank-colors.css");
 
 /* Color the background in thunar to match main BG color  */
 /* (these two are now imported from zz-thunar-bg.css) */
 
 /* Add padding around the whole window content */
-window, .background {
-    padding: 12px; /* change to taste */
+window,
+.background {
+    padding: 12px;
+    /* change to taste */
 }
 
 /* Thunar specific adjustments */
 .thunar .standard-view .view,
 .thunar .sidebar .view {
-    padding: 8px;
+    padding: 6px;
 }
 
 /* Optional: Make the inner elements breathe */
-.view, .sidebar, .pane { margin: 6px; }
+.view,
+.sidebar,
+.pane {
+    margin: 6px;
+}
 
 /* global top padding for all GTK3 windows */
-window, .background { padding-top: 8px !important; }
+window,
+.background {
+    padding-top: 14px !important;
+}
 
 /* extra space for classic menu bars & toolbars */
-menubar { padding-top: 6px; padding-bottom: 4px; }
-toolbar { padding-top: 4px; padding-bottom: 4px; }
+menubar {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+toolbar {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 
 /* client-side title/header bars (apps that use them) */
-headerbar { padding-top: 6px; min-height: 40px; }
+headerbar {
+    padding-top: 6px;
+    min-height: 40px;
+}

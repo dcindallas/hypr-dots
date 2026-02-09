@@ -1,10 +1,10 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/steamDeck/theme.json",
+  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/synthwaveElectric/theme.json",
   "registryThemeVariants": {
     "catppuccin": {
-      "flavor": "frappe",
+      "flavor": "mocha",
       "accent": "blue"
     },
     "flexoki": "yellow",
@@ -13,9 +13,10 @@
     "amoledBlack": {
       "flavor": "black",
       "accent": "light-orange"
-    }
+    },
+    "rosePine": "dawn"
   },
-  "matugenScheme": "scheme-content",
+  "matugenScheme": "scheme-fidelity",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -160,7 +161,7 @@
   "weatherEnabled": true,
   "networkPreference": "auto",
   "vpnLastConnected": "",
-  "iconTheme": "Dracula",
+  "iconTheme": "Sweet-Yellow",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
