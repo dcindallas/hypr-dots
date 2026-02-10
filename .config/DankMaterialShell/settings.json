@@ -16,7 +16,7 @@
     },
     "rosePine": "dawn"
   },
-  "matugenScheme": "scheme-fidelity",
+  "matugenScheme": "scheme-neutral",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -171,7 +171,7 @@
   "niriOverviewOverlayEnabled": true,
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "auto",
+  "networkPreference": "wifi",
   "vpnLastConnected": "",
   "iconTheme": "Sweet-Yellow",
   "cursorSettings": {
@@ -417,7 +417,7 @@
       "spacing": 25,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.75,
+      "transparency": 0.45,
       "widgetTransparency": 0.4,
       "squareCorners": false,
       "noBackground": false,
