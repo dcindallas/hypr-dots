@@ -116,6 +116,18 @@
       "id": "colorPicker",
       "enabled": true,
       "width": 50
+    },
+    {
+      "id": "idleInhibitor",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "diskUsage",
+      "enabled": true,
+      "width": 50,
+      "instanceId": "mlfukn74ceotsyfm98asa24diu9885",
+      "mountPath": "/"
     }
   ],
   "showWorkspaceIndex": true,
