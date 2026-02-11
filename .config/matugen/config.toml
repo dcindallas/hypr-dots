@@ -35,3 +35,7 @@ output_path = "/home/duane/.config/micro/colorschemes/dank-matugen.micro"
 [templates.zed]
 input_path = "/home/duane/.config/matugen/templates/zed_settings.json"
 output_path = "/home/duane/.config/zed/settings.json"
+
+[templates.ytm]
+input_path = '/home/duane/.config/matugen/templates/ytm.css'
+output_path = '/home/duane/color-files/ytm-style.css'

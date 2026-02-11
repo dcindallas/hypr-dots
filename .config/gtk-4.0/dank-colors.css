@@ -12,30 +12,30 @@
 @define-color error_bg_color #ffb4ab;
 @define-color error_fg_color #690005;
 /* Follow material spec (also I think looks nicer) */
-@define-color accent_fg_color #233335;
-@define-color accent_bg_color #b8cacc;
+@define-color accent_fg_color #353200;
+@define-color accent_bg_color #d1ca69;
 /* Use surface instead of background */
-@define-color window_bg_color #121414;
-@define-color window_fg_color #e3e2e2;
+@define-color window_bg_color #0e1419;
+@define-color window_fg_color #dde3ea;
 /* Make it more similar to Adwaita */
-@define-color view_bg_color #121414;
-@define-color view_fg_color #e3e2e2;
-@define-color headerbar_bg_color #121414;
-@define-color headerbar_fg_color #e3e2e2;
-@define-color sidebar_bg_color #1f2020;
-@define-color sidebar_fg_color #e3e2e2;
+@define-color view_bg_color #0e1419;
+@define-color view_fg_color #dde3ea;
+@define-color headerbar_bg_color #0e1419;
+@define-color headerbar_fg_color #dde3ea;
+@define-color sidebar_bg_color #1a2026;
+@define-color sidebar_fg_color #dde3ea;
 /* There is only like one application I know that uses this, and there isn't a good way to get
 a color between surface and surface container so I think just giving this surface is a good enough fallback*/
-@define-color secondary_sidebar_bg_color #121414;
-@define-color secondary_sidebar_fg_color #e3e2e2;
-@define-color card_bg_color #1f2020;
-@define-color card_fg_color #e3e2e2;
-@define-color overview_bg_color #1f2020;
-@define-color overview_fg_color #e3e2e2;
-@define-color popover_bg_color #1f2020;
-@define-color popover_fg_color #e3e2e2;
-@define-color dialog_bg_color #121414;
-@define-color dialog_fg_color #e3e2e2;
+@define-color secondary_sidebar_bg_color #0e1419;
+@define-color secondary_sidebar_fg_color #dde3ea;
+@define-color card_bg_color #1a2026;
+@define-color card_fg_color #dde3ea;
+@define-color overview_bg_color #1a2026;
+@define-color overview_fg_color #dde3ea;
+@define-color popover_bg_color #1a2026;
+@define-color popover_fg_color #dde3ea;
+@define-color dialog_bg_color #0e1419;
+@define-color dialog_fg_color #dde3ea;
 
 /* Backdrop/unfocused states - prevents white flash on window unfocus */
 @define-color headerbar_backdrop_color @window_bg_color;

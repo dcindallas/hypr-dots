@@ -45,3 +45,26 @@ headerbar {
     padding-top: 6px;
     min-height: 40px;
 }
+
+/* --- Notification & Icon Scaling Overrides --- */
+
+/* Force smaller notification icons */
+notification icon,
+.notification icon {
+    -gtk-icon-size: 24px !important;
+}
+
+/* Force smaller images (like album art) in notifications */
+.notification-image,
+#notification-image {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+}
+
+/* Fix for weird character spacing/containers */
+notification label {
+    padding-left: 8px;
+    padding-right: 8px;
+}
