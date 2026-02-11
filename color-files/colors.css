@@ -1,51 +1,51 @@
 === DankColors Complete Palette ===
 
 DANK16 COLORS (Terminal/Editor):
-color0  (black)         #131313
-color1  (red)           #e64c48
-color2  (green)         #72d66e
-color3  (yellow)        #dbd07b
-color4  (blue)          #5686ba
-color5  (magenta)       #a6a8aa
-color6  (cyan)          #dce0e3
+color0  (black)         #151311
+color1  (red)           #e2497b
+color2  (green)         #95d66e
+color3  (yellow)        #dbaf7b
+color4  (blue)          #a37f41
+color5  (magenta)       #a69a85
+color6  (cyan)          #decaa7
 color7  (white)         #abb2bf
 color8  (bright black)  #5c6370
-color9  (bright red)    #e05f60
-color10 (bright green)  #88e086
-color11 (bright yellow) #e8df97
-color12 (bright blue)   #d1d5d8
-color13 (bright magenta)#487f99
-color14 (bright cyan)   #637aa3
+color9  (bright red)    #e05f8d
+color10 (bright green)  #a8e086
+color11 (bright yellow) #e8c397
+color12 (bright blue)   #e7d2ad
+color13 (bright magenta)#9e6f4b
+color14 (bright cyan)   #88784a
 color15 (bright white)  #ffffff
 
 MATERIAL DESIGN COLORS:
-Primary:                #dce0e3
-On Primary:             #2c3134
-Primary Container:      #c0c4c7
-On Primary Container:   #303537
+Primary:                #decaa7
+On Primary:             #3b2f16
+Primary Container:      #c2af8d
+On Primary Container:   #30240c
 
-Secondary:              #c6c6c7
-On Secondary:           #2f3132
-Secondary Container:    #48494a
-On Secondary Container: #e4e4e5
+Secondary:              #d0c5b4
+On Secondary:           #363024
+Secondary Container:    #4d4639
+On Secondary Container: #ebdecd
 
-Tertiary:               #e5dde4
-On Tertiary:            #332f34
-Tertiary Container:     #c9c1c8
-On Tertiary Container:  #373338
+Tertiary:               #c8d1b1
+On Tertiary:            #2b331d
+Tertiary Container:     #acb597
+On Tertiary Container:  #212914
 
 Error:                  #ffb4ab
 On Error:               #690005
 Error Container:        #93000a
 On Error Container:     #ffdad6
 
-Surface:                #131313
-On Surface:             #e5e2e1
-Surface Variant:        #444749
-On Surface Variant:     #c4c7c9
+Surface:                #151311
+On Surface:             #e7e1dd
+Surface Variant:        #4c463c
+On Surface Variant:     #cec5b9
 
-Background:             #131313
-On Background:          #e5e2e1
+Background:             #151311
+On Background:          #e7e1dd
 
-Outline:                #8e9193
-Outline Variant:        #444749
+Outline:                #989084
+Outline Variant:        #4c463c

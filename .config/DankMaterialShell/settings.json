@@ -123,11 +123,9 @@
       "width": 50
     },
     {
-      "id": "diskUsage",
+      "id": "nightMode",
       "enabled": true,
-      "width": 50,
-      "instanceId": "mlfukn74ceotsyfm98asa24diu9885",
-      "mountPath": "/"
+      "width": 50
     }
   ],
   "showWorkspaceIndex": true,
@@ -359,7 +357,6 @@
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        "launcherButton",
         {
           "id": "workspaceSwitcher",
           "enabled": true
@@ -376,7 +373,11 @@
           "enabled": true,
           "mediaSize": 2
         },
-        "clock",
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        },
         "weather"
       ],
       "rightWidgets": [
@@ -387,19 +388,6 @@
         {
           "id": "clipboard",
           "enabled": true
-        },
-        {
-          "id": "cpuUsage",
-          "enabled": true
-        },
-        {
-          "id": "memUsage",
-          "enabled": true
-        },
-        {
-          "id": "cpuTemp",
-          "enabled": true,
-          "minimumWidth": true
         },
         {
           "id": "notificationButton",
@@ -415,13 +403,13 @@
         }
       ],
       "spacing": 25,
-      "innerPadding": 4,
+      "innerPadding": 5,
       "bottomGap": 0,
-      "transparency": 0.75,
+      "transparency": 0.6,
       "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
-      "gothCornersEnabled": true,
+      "gothCornersEnabled": false,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
@@ -429,10 +417,10 @@
       "borderOpacity": 0.75,
       "borderThickness": 1,
       "widgetOutlineEnabled": false,
-      "widgetOutlineColor": "surfaceText",
+      "widgetOutlineColor": "primary",
       "widgetOutlineOpacity": 0.2,
       "widgetOutlineThickness": 1,
-      "fontScale": 1.05,
+      "fontScale": 1,
       "autoHide": false,
       "autoHideDelay": 250,
       "showOnWindowsOpen": false,
@@ -444,8 +432,8 @@
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
-      "shadowIntensity": 20,
-      "shadowOpacity": 47,
+      "shadowIntensity": 50,
+      "shadowOpacity": 20,
       "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
     }
