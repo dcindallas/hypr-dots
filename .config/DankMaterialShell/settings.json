@@ -16,7 +16,7 @@
     },
     "rosePine": "dawn"
   },
-  "matugenScheme": "scheme-expressive",
+  "matugenScheme": "scheme-content",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,

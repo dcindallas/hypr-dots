@@ -6,7 +6,7 @@ bar_spacing = 1
 [color]
 gradient = 1
 gradient_count = 4
-gradient_color_1 = '#7a7d3d'
-gradient_color_2 = '#8d773b'
-gradient_color_3 = '#999128'
-gradient_color_4 = '#dfd78a'
+gradient_color_1 = '#637aa3'
+gradient_color_2 = '#487f99'
+gradient_color_3 = '#5686ba'
+gradient_color_4 = '#d1d5d8'
