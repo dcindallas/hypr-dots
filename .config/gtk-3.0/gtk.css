@@ -84,13 +84,13 @@ headerbar button.titlebutton.close {
 /* Add padding around the whole window content */
 window,
 .background {
-    padding: 20px; /* Changed from 12px to 15px */
+    padding: 10px; /* Changed from 12px to 15px */
 }
 
 /* global top padding for all GTK3 windows */
 window,
 .background {
-    padding-top: 20px !important; /* Changed from 14px to 15px */
+    padding-top: 10px !important; /* Changed from 14px to 15px */
 }
 
 /* Optional: Make the inner elements breathe */
