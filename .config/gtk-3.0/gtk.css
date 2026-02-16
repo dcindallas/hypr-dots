@@ -1,1 +1,29 @@
-dank-colors.css
+@import url("dank-colors.css");
+
+/* Color the background in thunar to match main BG color  */
+/* (these two are now imported from zz-thunar-bg.css) */
+
+/* Add padding around the whole window content */
+window,
+.background {
+    padding: 12px;
+    /* change to taste */
+}
+
+/* Thunar specific adjustments */
+.thunar .standard-view .view,
+.thunar .sidebar .view {
+    padding: 6px;
+}
+
+/* Hide Thunar (and all GTK3) window controls for tiling efficiency */
+headerbar button.titlebutton.maximize,
+headerbar button.titlebutton.minimize,
+headerbar button.titlebutton.close {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    min-height: 0;
+    opacity: 0;
+    /* This effectively removes them from view */
+}
