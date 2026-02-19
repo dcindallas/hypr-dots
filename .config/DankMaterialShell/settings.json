@@ -113,6 +113,18 @@
       "id": "darkMode",
       "enabled": true,
       "width": 50
+    },
+    {
+      "id": "colorPicker",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "diskUsage",
+      "enabled": true,
+      "width": 50,
+      "instanceId": "mlxb3q9c794r5yzild5nwgaapt359u",
+      "mountPath": "/"
     }
   ],
   "showWorkspaceIndex": true,
