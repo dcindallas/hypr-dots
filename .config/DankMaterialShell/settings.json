@@ -37,7 +37,7 @@
   "showSeconds": false,
   "useFahrenheit": true,
   "nightModeEnabled": false,
-  "animationSpeed": 2,
+  "animationSpeed": 3,
   "customAnimationDuration": 200,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
@@ -197,7 +197,7 @@
   "launcherLogoSizeOffset": 0,
   "fontFamily": "Spline Sans",
   "monoFontFamily": "Spline Sans Mono",
-  "fontWeight": 500,
+  "fontWeight": 400,
   "fontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
@@ -210,7 +210,7 @@
   "soundNewNotification": true,
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
-  "acMonitorTimeout": 600,
+  "acMonitorTimeout": 1800,
   "acLockTimeout": 900,
   "acSuspendTimeout": 7200,
   "acSuspendBehavior": 0,
@@ -229,7 +229,11 @@
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
   "brightnessDevicePins": {},
-  "wifiNetworkPins": {},
+  "wifiNetworkPins": {
+    "preferredWifi": [
+      "zeroday"
+    ]
+  },
   "bluetoothDevicePins": {
     "preferredDevice": [
       "F4:4E:FD:FD:E4:98"
@@ -322,7 +326,7 @@
     "suspend",
     "restart"
   ],
-  "powerMenuDefaultAction": "logout",
+  "powerMenuDefaultAction": "reboot",
   "powerMenuGridLayout": false,
   "customPowerActionLock": "",
   "customPowerActionLogout": "",
@@ -402,11 +406,16 @@
           "enabled": true
         }
       ],
-      "spacing": 25,
-      "innerPadding": 5,
+      "spacing": 24,
+      "innerPadding": 4,
       "bottomGap": 0,
+<<<<<<< HEAD
       "transparency": 0.5,
       "widgetTransparency": 0,
+=======
+      "transparency": 0.65,
+      "widgetTransparency": 0.32,
+>>>>>>> 5a42d7f (Rice Sync Update - 2026-02-18)
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": false,
@@ -418,7 +427,11 @@
       "borderThickness": 1,
       "widgetOutlineEnabled": false,
       "widgetOutlineColor": "primary",
+<<<<<<< HEAD
       "widgetOutlineOpacity": 0.68,
+=======
+      "widgetOutlineOpacity": 1,
+>>>>>>> 5a42d7f (Rice Sync Update - 2026-02-18)
       "widgetOutlineThickness": 1,
       "fontScale": 1,
       "autoHide": false,
@@ -426,14 +439,19 @@
       "showOnWindowsOpen": false,
       "openOnOverview": false,
       "visible": true,
-      "popupGapsAuto": true,
-      "popupGapsManual": 8,
+      "popupGapsAuto": false,
+      "popupGapsManual": 4,
       "maximizeDetection": true,
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
+<<<<<<< HEAD
       "shadowIntensity": 53,
       "shadowOpacity": 53,
+=======
+      "shadowIntensity": 25,
+      "shadowOpacity": 40,
+>>>>>>> 5a42d7f (Rice Sync Update - 2026-02-18)
       "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
     }
