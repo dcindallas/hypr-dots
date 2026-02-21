@@ -1,34 +1,21 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "/home/duane/.config/DankMaterialShell/themes/synthwaveElectric/theme.json",
-  "registryThemeVariants": {
-    "catppuccin": {
-      "flavor": "mocha",
-      "accent": "blue"
-    },
-    "flexoki": "yellow",
-    "gruvboxMaterial": "soft",
-    "petrichor": "blue",
-    "amoledBlack": {
-      "flavor": "black",
-      "accent": "light-orange"
-    },
-    "rosePine": "dawn"
-  },
-  "matugenScheme": "scheme-content",
+  "customThemeFile": "",
+  "registryThemeVariants": {},
+  "matugenScheme": "scheme-rainbow",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.8,
+  "popupTransparency": 0.9,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
-  "cornerRadius": 20,
+  "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
   "niriLayoutRadiusOverride": -1,
   "niriLayoutBorderSize": -1,
-  "hyprlandLayoutGapsOverride": 15,
-  "hyprlandLayoutRadiusOverride": 15,
+  "hyprlandLayoutGapsOverride": -1,
+  "hyprlandLayoutRadiusOverride": -1,
   "hyprlandLayoutBorderSize": -1,
   "mangoLayoutGapsOverride": -1,
   "mangoLayoutRadiusOverride": -1,
@@ -37,8 +24,8 @@
   "showSeconds": false,
   "useFahrenheit": true,
   "nightModeEnabled": false,
-  "animationSpeed": 3,
-  "customAnimationDuration": 200,
+  "animationSpeed": 1,
+  "customAnimationDuration": 500,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
@@ -71,7 +58,6 @@
   "controlCenterShowMicPercent": true,
   "controlCenterShowBatteryIcon": false,
   "controlCenterShowPrinterIcon": false,
-  "controlCenterShowScreenSharingIcon": true,
   "showPrivacyButton": true,
   "privacyShowMicIcon": false,
   "privacyShowCameraIcon": false,
@@ -108,29 +94,19 @@
       "width": 50
     },
     {
-      "id": "darkMode",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "colorPicker",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "idleInhibitor",
-      "enabled": true,
-      "width": 50
-    },
-    {
       "id": "nightMode",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "darkMode",
       "enabled": true,
       "width": 50
     }
   ],
   "showWorkspaceIndex": true,
   "showWorkspaceName": false,
-  "showWorkspacePadding": false,
+  "showWorkspacePadding": true,
   "workspaceScrolling": false,
   "showWorkspaceApps": false,
   "maxWorkspaceIcons": 3,
@@ -158,10 +134,10 @@
   "runningAppsGroupByApp": false,
   "appIdSubstitutions": [],
   "centeringMode": "index",
-  "clockDateFormat": "ddd MMM d",
-  "lockDateFormat": "ddd MMM d",
+  "clockDateFormat": "",
+  "lockDateFormat": "",
   "mediaSize": 1,
-  "appLauncherViewMode": "grid",
+  "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 4,
@@ -169,7 +145,7 @@
   "niriOverviewOverlayEnabled": true,
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "wifi",
+  "networkPreference": "auto",
   "vpnLastConnected": "",
   "iconTheme": "Sweet-Rainbow",
   "cursorSettings": {
@@ -180,7 +156,7 @@
       "hideAfterInactiveMs": 0
     },
     "hyprland": {
-      "hideOnKeyPress": true,
+      "hideOnKeyPress": false,
       "hideOnTouch": false,
       "inactiveTimeout": 0
     },
@@ -188,17 +164,17 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "apps",
+  "launcherLogoMode": "dank",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,
-  "launcherLogoBrightness": 0.5,
+  "launcherLogoBrightness": 1,
   "launcherLogoContrast": 1,
-  "launcherLogoSizeOffset": 0,
+  "launcherLogoSizeOffset": 5,
   "fontFamily": "Spline Sans",
   "monoFontFamily": "Spline Sans Mono",
-  "fontWeight": 400,
-  "fontScale": 1,
+  "fontWeight": 500,
+  "fontScale": 1.05,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
@@ -211,10 +187,10 @@
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
   "acMonitorTimeout": 1800,
-  "acLockTimeout": 900,
+  "acLockTimeout": 600,
   "acSuspendTimeout": 7200,
   "acSuspendBehavior": 0,
-  "acProfileName": "",
+  "acProfileName": "0",
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
@@ -224,21 +200,13 @@
   "lockBeforeSuspend": false,
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": true,
-  "fadeToLockGracePeriod": 5,
+  "fadeToLockGracePeriod": 10,
   "fadeToDpmsEnabled": true,
-  "fadeToDpmsGracePeriod": 5,
+  "fadeToDpmsGracePeriod": 10,
   "launchPrefix": "",
   "brightnessDevicePins": {},
-  "wifiNetworkPins": {
-    "preferredWifi": [
-      "zeroday"
-    ]
-  },
-  "bluetoothDevicePins": {
-    "preferredDevice": [
-      "F4:4E:FD:FD:E4:98"
-    ]
-  },
+  "wifiNetworkPins": {},
+  "bluetoothDevicePins": {},
   "audioInputDevicePins": {},
   "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
@@ -295,9 +263,9 @@
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 2,
   "hideBrightnessSlider": false,
-  "notificationTimeoutLow": 10000,
-  "notificationTimeoutNormal": 15000,
-  "notificationTimeoutCritical": 0,
+  "notificationTimeoutLow": 8000,
+  "notificationTimeoutNormal": 10000,
+  "notificationTimeoutCritical": 600000,
   "notificationCompactMode": false,
   "notificationPopupPosition": 0,
   "notificationHistoryEnabled": true,
@@ -317,7 +285,7 @@
   "osdPowerProfileEnabled": true,
   "osdAudioOutputEnabled": true,
   "powerActionConfirm": true,
-  "powerActionHoldDuration": 0.5,
+  "powerActionHoldDuration": 0.25,
   "powerMenuActions": [
     "reboot",
     "logout",
@@ -338,15 +306,12 @@
   "updaterUseCustomCommand": false,
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
-  "displayNameMode": "model",
+  "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {
     "HDMI-A-2": {
-      "bitdepth": 10
-    },
-    "desc:Acer Technologies ED273U A": {
       "bitdepth": 10
     }
   },
@@ -361,77 +326,39 @@
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        {
-          "id": "workspaceSwitcher",
-          "enabled": true
-        },
-        {
-          "id": "focusedWindow",
-          "enabled": true,
-          "focusedWindowCompactMode": false
-        }
+        "launcherButton",
+        "workspaceSwitcher",
+        "focusedWindow"
       ],
       "centerWidgets": [
-        {
-          "id": "music",
-          "enabled": true,
-          "mediaSize": 2
-        },
-        {
-          "id": "clock",
-          "enabled": true,
-          "clockCompactMode": false
-        },
+        "music",
+        "clock",
         "weather"
       ],
       "rightWidgets": [
-        {
-          "id": "systemTray",
-          "enabled": true
-        },
-        {
-          "id": "clipboard",
-          "enabled": true
-        },
-        {
-          "id": "notificationButton",
-          "enabled": true
-        },
-        {
-          "id": "battery",
-          "enabled": true
-        },
-        {
-          "id": "controlCenterButton",
-          "enabled": true
-        }
+        "systemTray",
+        "clipboard",
+        "notificationButton",
+        "battery",
+        "controlCenterButton"
       ],
-      "spacing": 24,
+      "spacing": 25,
       "innerPadding": 4,
       "bottomGap": 0,
-<<<<<<< HEAD
-      "transparency": 0.5,
+      "transparency": 0.55,
       "widgetTransparency": 0,
-=======
-      "transparency": 0.65,
-      "widgetTransparency": 0.32,
->>>>>>> 5a42d7f (Rice Sync Update - 2026-02-18)
       "squareCorners": false,
       "noBackground": false,
-      "gothCornersEnabled": false,
+      "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
-      "borderEnabled": true,
-      "borderColor": "secondary",
-      "borderOpacity": 0.99,
+      "borderEnabled": false,
+      "borderColor": "surfaceText",
+      "borderOpacity": 1,
       "borderThickness": 1,
       "widgetOutlineEnabled": false,
       "widgetOutlineColor": "primary",
-<<<<<<< HEAD
-      "widgetOutlineOpacity": 0.68,
-=======
       "widgetOutlineOpacity": 1,
->>>>>>> 5a42d7f (Rice Sync Update - 2026-02-18)
       "widgetOutlineThickness": 1,
       "fontScale": 1,
       "autoHide": false,
@@ -439,19 +366,14 @@
       "showOnWindowsOpen": false,
       "openOnOverview": false,
       "visible": true,
-      "popupGapsAuto": false,
+      "popupGapsAuto": true,
       "popupGapsManual": 4,
       "maximizeDetection": true,
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
-<<<<<<< HEAD
-      "shadowIntensity": 53,
-      "shadowOpacity": 53,
-=======
-      "shadowIntensity": 25,
-      "shadowOpacity": 40,
->>>>>>> 5a42d7f (Rice Sync Update - 2026-02-18)
+      "shadowIntensity": 10,
+      "shadowOpacity": 50,
       "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
     }
@@ -525,33 +447,11 @@
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
   "desktopWidgetGridSettings": {},
-  "desktopWidgetInstances": [
-    {
-      "id": "dw_1769403263693_xhhzmuvta",
-      "widgetType": "mediaFrame",
-      "name": "Media Frame",
-      "enabled": false,
-      "config": {
-        "displayPreferences": [
-          "all"
-        ],
-        "imagePath": "/home/duane/Pictures/new-art/455068239_8169542223084416_2275090487811935060_n.jpg",
-        "fillMode": "PreserveAspectCrop"
-      },
-      "positions": {
-        "ED273U A": {
-          "width": 974.7734375,
-          "height": 769.89453125,
-          "x": 1283.3671875,
-          "y": 175.90234375
-        }
-      }
-    }
-  ],
+  "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
-      "trigger": ""
+      "trigger": "?"
     }
   },
   "configVersion": 5
