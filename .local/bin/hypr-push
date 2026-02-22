@@ -1,0 +1,64 @@
+#!/usr/bin/env fish
+# hypr-push — Safe hypr-dots Sync Script because I am that fucking cool
+
+set -l git_cmd git --git-dir=$HOME/hypr-dots/ --work-tree=$HOME
+
+# Check for untracked files
+set -l untracked ($git_cmd status -u --porcelain | string match -r '^\?\? .*')
+
+# Handle untracked files
+if test -n "$untracked"
+    echo ""
+    echo "Untracked files found:"
+    echo "$untracked"
+    echo ""
+    read --prompt-str "Add untracked files? [y/N] " -l add_untracked
+    if test "$add_untracked" = y -o "$add_untracked" = Y
+        for line in $untracked
+            set -l filepath (string replace -r '^\?\? ' '' $line)
+            $git_cmd add "$filepath"
+            echo "  Staged: $filepath"
+        end
+    end
+end
+
+# Stage all modified tracked files
+$git_cmd add -u
+
+# Check if anything is actually staged
+set -l staged ($git_cmd diff --cached --name-only)
+
+if test -z "$staged"
+    notify-send "Rice Sync" "No changes to push"
+    echo "Nothing to commit."
+    exit 0
+end
+
+# Show what will be committed
+echo ""
+echo "Staged for commit:"
+$git_cmd status --short
+
+# Commit
+if $git_cmd commit -m "Rice Sync Update - "(date +%Y-%m-%d)
+    echo "Committed successfully"
+else
+    notify-send "Rice Sync" "Commit failed"
+    exit 1
+end
+
+# Pull with rebase
+if not $git_cmd pull --rebase origin main
+    notify-send "Rice Sync" "Pull failed - resolve conflicts"
+    exit 1
+end
+
+# Push
+if $git_cmd push origin main
+    notify-send "Rice Sync" "Backup successful ✓"
+    echo "Pushed to GitHub successfully"
+else
+    notify-send "Rice Sync" "Push failed - check terminal"
+    exit 1
+end
+
