@@ -1,0 +1,63 @@
+/* -----------------------------------------------------------------------------
+   DANKLINUX FLAT UI - YOUTUBE MUSIC DESKTOP
+   Accent: {{colors.primary.default.hex}} (Accent System Color)
+   Background: {{colors.surface.default.hex}}
+   ----------------------------------------------------------------------------- */
+
+:root, html:not(.style-scope) {
+    /* Matugen Integration Variables */
+    --cust-ytmusic-dark-background: {{colors.surface.default.hex}};
+    --cust-ytmusic-dark-foreground: {{colors.surface.default.hex}};
+    --cust-ytmusic-playbutton-color: {{dank16.color6.default.hex}}; /* Your Accent */
+    --cust-ytmusic-main-text-1: {{colors.on_tertiary_container.default.hex}};
+    --cust-ytmusic-secondary-text: {{dank16.color6.default.hex}};
+
+    /* Standard YTM Overrides */
+    --ytmusic-color-black1: var(--cust-ytmusic-dark-foreground) !important;
+    --ytmusic-color-black4: var(--cust-ytmusic-dark-background) !important;
+    --ytmusic-color-white1: var(--cust-ytmusic-main-text-1) !important;
+    --ytmusic-static-brand-red: var(--cust-ytmusic-playbutton-color) !important; /* Progress Bar */
+}
+
+/* --- THE FLATTENING: Kill all Google Gradients & Shadows --- */
+ytmusic-browse-response[has-background] .background-gradient.ytmusic-browse-response,
+.background-gradient,
+#nav-bar-background,
+#player-bar-background,
+ytmusic-player-bar {
+    background: none !important;
+    background-color: var(--cust-ytmusic-dark-background) !important;
+    box-shadow: none !important;
+}
+
+/* --- THE ACCENT: Play/Pause/Icons --- */
+#icon.tp-yt-iron-icon,
+paper-icon-button#play-pause-button,
+tp-yt-iron-icon#icon,
+.content-wrapper.ytmusic-play-button-renderer {
+    --iron-icon-fill-color: var(--cust-ytmusic-playbutton-color) !important;
+    --ytmusic-play-button-icon-color: var(--cust-ytmusic-dark-background) !important;
+    background-color: var(--cust-ytmusic-playbutton-color) !important;
+    border-radius: 12px !important; /* Tighter rounding for UI elements */
+}
+
+/* --- THE PROGRESS: Clean Slim Loading Bar --- */
+#progress-bar.ytmusic-player-bar {
+    --paper-slider-active-color: var(--cust-ytmusic-playbutton-color) !important;
+    --paper-slider-container-color: rgba(255, 255, 255, 0.05) !important;
+    --paper-slider-knob-color: var(--cust-ytmusic-playbutton-color) !important;
+}
+
+/* --- THE UI: Responsive Lists & Panels --- */
+ytmusic-list-item-renderer,
+ytmusic-responsive-list-item-renderer,
+ytmusic-player-queue-item,
+.dropdown-content {
+    background-color: var(--cust-ytmusic-dark-background) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+/* Hide clutter */
+.yt-simple-endpoint[aria-label="Home"] {
+    visibility: hidden !important;
+}

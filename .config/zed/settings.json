@@ -1,0 +1,70 @@
+{
+  "theme": "DevStreetLab Dark",
+  "theme_overrides": {
+    "DevStreetLab Dark": {
+      "background": "#131315",
+      "editor.background": "#131315",
+      "editor.gutter.background": "#131315",
+      "surface.background": "#131315",
+      "elevated_surface.background": "#131315",
+      "tab_bar.background": "#131315",
+      "tab.inactive_background": "#131315",
+      "tab.active_background": "#1f1f21",
+      "toolbar.background": "#131315",
+      "title_bar.background": "#131315",
+      "title_bar.inactive_background": "#131315",
+      "panel.background": "#131315",
+      "status_bar.background": "#131315",
+      "terminal.background": "#131315",
+      "element.background": "#131315",
+      "ghost_element.background": "#131315",
+      "border": "#00000000",
+      "border.variant": "#00000000",
+      "border.transparent": "#00000000",
+      "scrollbar.thumb.background": "00000000",
+      "scrollbar.thumb.hover_background": "#44474c",
+      "scrollbar.thumb.border": "#00000000",
+      "scrollbar.track.background": "#131315",
+      "scrollbar.track.border": "#00000000",
+      "syntax": {
+        "string": {
+          "color": "#d9dee7"
+        },
+        "string.regex": {
+          "color": "#acb9d1"
+        },
+        "constant": {
+          "color": "#d9dee7"
+        },
+        "comment": {
+          "color": "#84888f",
+          "font_style": "italic"
+        },
+        "keyword": {
+          "color": "#ff9fba"
+        }
+      }
+    }
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14,
+  "ui_font_family": "Spline Sans",
+  "buffer_font_family": "Spline Sans Mono",
+  "icon_theme": "Icons modern material (Dark)",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "search": {
+    "regex": true
+  },
+  "languages": {
+    "JSON": {
+      "format_on_save": "on"
+    },
+    "CSS": {
+      "format_on_save": "on"
+    }
+  }
+}

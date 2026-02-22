@@ -1,0 +1,149 @@
+#!/bin/bash
+# scrcpy-toggle — ~/.local/bin/scrcpy-toggle
+# Toggle scrcpy on/off with dynamic WiFi or USB connection
+
+# ─────────────────────────────────────────────
+#  KILL
+# ─────────────────────────────────────────────
+kill_scrcpy() {
+    echo "scrcpy is running — killing..."
+    pkill -x scrcpy 2>/dev/null
+    sleep 0.5
+
+    # Disconnect all TCP adb devices
+    TCP_DEVICES=$(adb devices | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' | awk '{print $1}')
+    if [[ -n "$TCP_DEVICES" ]]; then
+        while IFS= read -r dev; do
+            echo "  Disconnecting $dev"
+            adb disconnect "$dev"
+        done <<< "$TCP_DEVICES"
+    else
+        echo "  No TCP adb connections to disconnect."
+    fi
+
+    echo "Done."
+    exit 0
+}
+
+# ─────────────────────────────────────────────
+#  WIFI
+# ─────────────────────────────────────────────
+start_wifi() {
+    echo ""
+
+    echo "Scanning for wireless debug devices (Wireless Debugging must be ON)..."
+    sleep 1
+
+    # Discover and resolve ADB TLS connect services, deduplicate by IP:port
+    RAW=$(avahi-browse -t -r _adb-tls-connect._tcp 2>/dev/null)
+
+    # Parse IPv4 address:port pairs only, deduplicate
+    declare -A SEEN
+    DEVICES=()
+    IP=""
+    PORT=""
+    while IFS= read -r line; do
+        if [[ "$line" =~ ^[[:space:]]*address[[:space:]]*=[[:space:]]*\[([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)\] ]]; then
+            IP="${BASH_REMATCH[1]}"
+        fi
+        if [[ "$line" =~ ^[[:space:]]*port[[:space:]]*=[[:space:]]*\[([0-9]+)\] ]]; then
+            PORT="${BASH_REMATCH[1]}"
+            if [[ -n "$IP" && -n "$PORT" ]]; then
+                KEY="${IP}:${PORT}"
+                if [[ -z "${SEEN[$KEY]}" ]]; then
+                    DEVICES+=("$KEY")
+                    SEEN[$KEY]=1
+                fi
+                IP=""
+                PORT=""
+            fi
+        fi
+    done <<< "$RAW"
+
+    COUNT="${#DEVICES[@]}"
+
+    if [[ "$COUNT" -eq 0 ]]; then
+        echo "ERROR: No wireless debug devices found."
+        echo "  → Make sure Wireless Debugging is ON on your phone."
+        echo "  → Phone and PC must be on the same network."
+        exit 1
+    fi
+
+    if [[ "$COUNT" -eq 1 ]]; then
+        TARGET="${DEVICES[0]}"
+        echo "Found device: $TARGET"
+    else
+        echo "Multiple devices found — pick one:"
+        select TARGET in "${DEVICES[@]}"; do
+            [[ -n "$TARGET" ]] && break
+            echo "Invalid choice, try again."
+        done
+    fi
+
+    echo "Connecting to $TARGET..."
+    CONNECT_OUT=$(adb connect "$TARGET" 2>&1)
+    echo "  $CONNECT_OUT"
+
+    if echo "$CONNECT_OUT" | grep -qi "failed\|unable\|error"; then
+        echo "ERROR: Failed to connect to $TARGET"
+        exit 1
+    fi
+
+    sleep 1
+    echo "Launching scrcpy..."
+    scrcpy --tcpip="$TARGET" &
+}
+
+# ─────────────────────────────────────────────
+#  CABLE
+# ─────────────────────────────────────────────
+start_cable() {
+    echo ""
+    get_usb_device() {
+        adb devices \
+            | grep -v "List of devices" \
+            | grep -v "^$" \
+            | grep -v ":" \
+            | grep "device$" \
+            | awk '{print $1}' \
+            | head -1
+    }
+
+    USB_DEVICE=$(get_usb_device)
+
+    if [[ -z "$USB_DEVICE" ]]; then
+        echo "No USB device found."
+        echo "Plug in your phone (make sure USB debugging is enabled) then press Enter..."
+        read -r
+        USB_DEVICE=$(get_usb_device)
+        if [[ -z "$USB_DEVICE" ]]; then
+            echo "ERROR: Still no USB device found. Check your cable and USB debugging setting."
+            exit 1
+        fi
+    fi
+
+    echo "Found USB device: $USB_DEVICE"
+    echo "Launching scrcpy..."
+    scrcpy &
+}
+
+# ─────────────────────────────────────────────
+#  MAIN
+# ─────────────────────────────────────────────
+
+# If scrcpy is already running, kill it and exit
+if pgrep -x scrcpy > /dev/null; then
+    kill_scrcpy
+fi
+
+# Not running — ask how to connect
+echo "scrcpy is not running."
+echo "How do you want to connect?"
+echo ""
+select MODE in "WiFi (Wireless Debugging)" "Cable (USB)"; do
+    case "$MODE" in
+        "WiFi (Wireless Debugging)") start_wifi;  break ;;
+        "Cable (USB)")               start_cable; break ;;
+        *) echo "Invalid choice, pick 1 or 2." ;;
+    esac
+done

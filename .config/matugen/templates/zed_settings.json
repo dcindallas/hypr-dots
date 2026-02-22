@@ -1,0 +1,70 @@
+{
+  "theme": "DevStreetLab Dark",
+  "theme_overrides": {
+    "DevStreetLab Dark": {
+      "background": "{{colors.surface.default.hex}}",
+      "editor.background": "{{colors.surface.default.hex}}",
+      "editor.gutter.background": "{{colors.surface.default.hex}}",
+      "surface.background": "{{colors.surface.default.hex}}",
+      "elevated_surface.background": "{{colors.surface.default.hex}}",
+      "tab_bar.background": "{{colors.surface.default.hex}}",
+      "tab.inactive_background": "{{colors.surface.default.hex}}",
+      "tab.active_background": "{{colors.surface_container.default.hex}}",
+      "toolbar.background": "{{colors.surface.default.hex}}",
+      "title_bar.background": "{{colors.surface.default.hex}}",
+      "title_bar.inactive_background": "{{colors.surface.default.hex}}",
+      "panel.background": "{{colors.surface.default.hex}}",
+      "status_bar.background": "{{colors.surface.default.hex}}",
+      "terminal.background": "{{colors.surface.default.hex}}",
+      "element.background": "{{colors.surface.default.hex}}",
+      "ghost_element.background": "{{colors.surface.default.hex}}",
+      "border": "#00000000",
+      "border.variant": "#00000000",
+      "border.transparent": "#00000000",
+      "scrollbar.thumb.background": "00000000",
+      "scrollbar.thumb.hover_background": "{{colors.surface_variant.default.hex}}",
+      "scrollbar.thumb.border": "#00000000",
+      "scrollbar.track.background": "{{colors.surface.default.hex}}",
+      "scrollbar.track.border": "#00000000",
+      "syntax": {
+        "string": {
+          "color": "{{dank16.color7.default.hex}}"
+        },
+        "string.regex": {
+          "color": "{{dank16.color4.default.hex}}"
+        },
+        "constant": {
+          "color": "{{dank16.color7.default.hex}}"
+        },
+        "comment": {
+          "color": "{{dank16.color8.default.hex}}",
+          "font_style": "italic"
+        },
+        "keyword": {
+          "color": "{{dank16.color9.default.hex}}"
+        }
+      }
+    }
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14,
+  "ui_font_family": "Spline Sans",
+  "buffer_font_family": "Spline Sans Mono",
+  "icon_theme": "Icons modern material (Dark)",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "search": {
+    "regex": true
+  },
+  "languages": {
+    "JSON": {
+      "format_on_save": "on"
+    },
+    "CSS": {
+      "format_on_save": "on"
+    }
+  }
+}
