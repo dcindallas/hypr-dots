@@ -19,9 +19,9 @@
 # Mode at startup (viewer/slideshow/gallery)
 mode = viewer
 # Window size (fullscreen/image, or absolute size)
-size = 1280,720
+size = image
 # Sway/Hyprland only: Window position (auto or absolute coordinates, e.g. 10,20)
-position = auto
+position = center
 # Sway/Hyprland only: create floating window above the currently focused one
 overlay = no
 # Use window decoration (yes/no)
@@ -51,7 +51,7 @@ mode = auto
 # Window background color (auto/extend/mirror/RGBA)
 window = #00000000
 # Background for transparent images (grid/RGBA)
-transparency = grid
+transparency = #00000000
 # Default image scale (optimal/width/height/fit/fill/real/keep)
 scale = optimal
 # Initial image position on the window (center/top/bottom/free/...)
