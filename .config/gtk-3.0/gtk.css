@@ -1,4 +1,4 @@
-@import url("dank-colors.css");
+@import url("duane-colors.css");
 
 /* Color the background in thunar to match main BG color  */
 /* (these two are now imported from zz-thunar-bg.css) */
@@ -6,7 +6,7 @@
 /* Add padding around the whole window content */
 window,
 .background {
-    padding: 12px;
+    padding: 1px;
     /* change to taste */
 }
 

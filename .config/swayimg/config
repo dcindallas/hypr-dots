@@ -19,9 +19,9 @@
 # Mode at startup (viewer/slideshow/gallery)
 mode = viewer
 # Window size (fullscreen/image, or absolute size)
-size = image
+size = 1700,1000
 # Sway/Hyprland only: Window position (auto or absolute coordinates, e.g. 10,20)
-position = center
+position = auto
 # Sway/Hyprland only: create floating window above the currently focused one
 overlay = no
 # Use window decoration (yes/no)
@@ -127,7 +127,8 @@ recursive = no
 all = no
 # Enable file system monitoring for adding new images to the list (yes/no)
 fsmon = yes
-
+# Enable file system monitoring for adding new images to the list (yes/no)
+all = yes
 ################################################################################
 # Font configuration
 ################################################################################
@@ -135,9 +136,9 @@ fsmon = yes
 # Font name
 name = Spline Sans
 # Font size (pt)
-size = 14
+size = 12
 # Font color (RGBA)
-color = #ccccccff
+color = #cecece
 # Shadow color (RGBA)
 shadow = #000000d0
 # Background color (RGBA)
@@ -181,7 +182,7 @@ bottom_right = name,status
 # Viewer mode key binding configuration: key = action [parameters]
 ################################################################################
 [keys.viewer]
-F2 = help
+F1 = help
 Home = first_file
 End = last_file
 Prior = prev_file
@@ -242,7 +243,7 @@ MouseExtra = next_file
 # Slideshow mode key binding configuration: key = action [parameters]
 ################################################################################
 [keys.slideshow]
-F2 = help
+F1 = help
 Home = first_file
 End = last_file
 Prior = prev_file
@@ -261,7 +262,7 @@ q = exit
 # Gallery mode key binding configuration: key = action [parameters]
 ################################################################################
 [keys.gallery]
-F2 = help
+F1 = help
 Home = first_file
 End = last_file
 Left = step_left
