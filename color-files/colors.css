@@ -1,51 +1,51 @@
 === DankColors Complete Palette ===
 
 DANK16 COLORS (Terminal/Editor):
-color0  (black)         #141218
-color1  (red)           #ff728f
-color2  (green)         #7fff9a
-color3  (yellow)        #ffda72
-color4  (blue)          #bca5f2
-color5  (magenta)       #4e3d76
-color6  (cyan)          #D0BCFF
-color7  (white)         #f4efff
-color8  (bright black)  #9d99a5
-color9  (bright red)    #ff9fb2
-color10 (bright green)  #a5ffb8
-color11 (bright yellow) #ffe7a5
-color12 (bright blue)   #d7c6ff
-color13 (bright magenta)#ded0ff
-color14 (bright cyan)   #e9e0ff
-color15 (bright white)  #faf8ff
+color0  (black)         #11131c
+color1  (red)           #ff5089
+color2  (green)         #60fe71
+color3  (yellow)        #fff450
+color4  (blue)          #3dc1f1
+color5  (magenta)       #005675
+color6  (cyan)          #60d4fe
+color7  (white)         #ebf9ff
+color8  (bright black)  #95a1a5
+color9  (bright red)    #ff88af
+color10 (bright green)  #8fff9c
+color11 (bright yellow) #fff88f
+color12 (bright blue)   #78dbff
+color13 (bright magenta)#8fe1ff
+color14 (bright cyan)   #b7ecff
+color15 (bright white)  #f7fcff
 
 MATERIAL DESIGN COLORS:
-Primary:                #d0bcff
-On Primary:             #381e72
-Primary Container:      #4f378b
-On Primary Container:   #e6e0e9
+Primary:                #60d4fe
+On Primary:             #003545
+Primary Container:      #004d62
+On Primary Container:   #bbeaff
 
-Secondary:              #ccc2dc
-On Secondary:           #381e72
-Secondary Container:    #2b292f
-On Secondary Container: #e6e0e9
+Secondary:              #89d0ee
+On Secondary:           #003545
+Secondary Container:    #004d62
+On Secondary Container: #bbeaff
 
-Tertiary:               #ccc2dc
-On Tertiary:            #381e72
-Tertiary Container:     #2b292f
-On Tertiary Container:  #e6e0e9
+Tertiary:               #b8c4ff
+On Tertiary:            #1f2c61
+Tertiary Container:     #374379
+On Tertiary Container:  #dde1ff
 
-Error:                  #f2b8b5
-On Error:               #601410
-Error Container:        #8c1d18
-On Error Container:     #f9dedc
+Error:                  #ffb4ab
+On Error:               #690005
+Error Container:        #93000a
+On Error Container:     #ffdad6
 
-Surface:                #141218
-On Surface:             #e6e0e9
-Surface Variant:        #49454e
-On Surface Variant:     #cac4cf
+Surface:                #11131c
+On Surface:             #e1e1ef
+Surface Variant:        #424659
+On Surface Variant:     #c2c5dd
 
-Background:             #141218
-On Background:          #e6e0e9
+Background:             #11131c
+On Background:          #e1e1ef
 
-Outline:                #948f99
-Outline Variant:        #49454e
+Outline:                #8c8fa6
+Outline Variant:        #424659

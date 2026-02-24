@@ -1,9 +1,9 @@
 {
-  "currentThemeName": "purple",
-  "currentThemeCategory": "generic",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
   "customThemeFile": "",
   "registryThemeVariants": {},
-  "matugenScheme": "scheme-neutral",
+  "matugenScheme": "scheme-fruit-salad",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 0.85,
@@ -211,7 +211,7 @@
   "spotlightCloseNiriOverview": true,
   "spotlightSectionViewModes": {
     "apps": "list",
-    "plugin_emojiLauncher": "grid"
+    "plugin_emojiLauncher": "list"
   },
   "appDrawerSectionViewModes": {
     "apps": "list"
@@ -478,11 +478,11 @@
       "spacing": 25,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 1,
-      "widgetTransparency": 1,
+      "transparency": 0.5,
+      "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
-      "gothCornersEnabled": false,
+      "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
@@ -506,7 +506,7 @@
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
       "shadowIntensity": 51,
-      "shadowOpacity": 38,
+      "shadowOpacity": 40,
       "shadowColorMode": "surface",
       "shadowCustomColor": "#000000"
     }
@@ -588,7 +588,11 @@
     }
   },
   "clipboardEnterToPaste": false,
-  "launcherPluginVisibility": {},
+  "launcherPluginVisibility": {
+    "emojiLauncher": {
+      "allowWithoutTrigger": true
+    }
+  },
   "launcherPluginOrder": [],
   "configVersion": 5
 }
