@@ -1,16 +1,16 @@
 /* -----------------------------------------------------------------------------
    DANKLINUX FLAT UI - YOUTUBE MUSIC DESKTOP
-   Accent: #b8c4ff (Accent System Color)
-   Background: #121318
+   Accent: #d0bcff (Accent System Color)
+   Background: #141218
    ----------------------------------------------------------------------------- */
 
 :root, html:not(.style-scope) {
     /* Matugen Integration Variables */
-    --cust-ytmusic-dark-background: #121318;
-    --cust-ytmusic-dark-foreground: #121318;
-    --cust-ytmusic-playbutton-color: #b8c4ff; /* Your Accent */
-    --cust-ytmusic-main-text-1: #ffd7f4;
-    --cust-ytmusic-secondary-text: #b8c4ff;
+    --cust-ytmusic-dark-background: #141218;
+    --cust-ytmusic-dark-foreground: #141218;
+    --cust-ytmusic-playbutton-color: #D0BCFF; /* Your Accent */
+    --cust-ytmusic-main-text-1: #e6e0e9;
+    --cust-ytmusic-secondary-text: #D0BCFF;
 
     /* Standard YTM Overrides */
     --ytmusic-color-black1: var(--cust-ytmusic-dark-foreground) !important;
