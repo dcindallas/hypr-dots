@@ -3,16 +3,16 @@
   "currentThemeCategory": "dynamic",
   "customThemeFile": "",
   "registryThemeVariants": {},
-  "matugenScheme": "scheme-fruit-salad",
+  "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.85,
+  "popupTransparency": 0.8,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
   "controlCenterTileColorMode": "primary",
   "buttonColorMode": "primary",
-  "cornerRadius": 12,
+  "cornerRadius": 15,
   "niriLayoutGapsOverride": -1,
   "niriLayoutRadiusOverride": -1,
   "niriLayoutBorderSize": -1,
@@ -265,7 +265,7 @@
   "soundNewNotification": true,
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
-  "acMonitorTimeout": 1800,
+  "acMonitorTimeout": 300,
   "acLockTimeout": 600,
   "acSuspendTimeout": 7200,
   "acSuspendBehavior": 0,
@@ -454,17 +454,23 @@
           "enabled": true
         },
         {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
+          "id": "cpuTemp",
+          "enabled": true,
+          "minimumWidth": true
+        },
+        {
           "id": "cpuUsage",
           "enabled": true,
           "minimumWidth": true
         },
         {
-          "id": "capsLockIndicator",
-          "enabled": true
-        },
-        {
-          "id": "notificationButton",
-          "enabled": true
+          "id": "memUsage",
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "battery",
@@ -478,11 +484,11 @@
       "spacing": 25,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.5,
+      "transparency": 0.45,
       "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
-      "gothCornersEnabled": true,
+      "gothCornersEnabled": false,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
@@ -505,9 +511,9 @@
       "scrollEnabled": true,
       "scrollXBehavior": "column",
       "scrollYBehavior": "workspace",
-      "shadowIntensity": 51,
-      "shadowOpacity": 40,
-      "shadowColorMode": "surface",
+      "shadowIntensity": 40,
+      "shadowOpacity": 51,
+      "shadowColorMode": "custom",
       "shadowCustomColor": "#000000"
     }
   ],
@@ -590,6 +596,9 @@
   "clipboardEnterToPaste": false,
   "launcherPluginVisibility": {
     "emojiLauncher": {
+      "allowWithoutTrigger": true
+    },
+    "dms_settings_search": {
       "allowWithoutTrigger": true
     }
   },

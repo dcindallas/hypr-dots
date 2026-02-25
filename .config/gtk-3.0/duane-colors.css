@@ -10,31 +10,31 @@
 @define-color error_fg_color #690005;
 
 /* Accent colors */
-@define-color accent_fg_color #bbeaff;
-@define-color accent_bg_color #60d4fe;
+@define-color accent_fg_color #c9e6ff;
+@define-color accent_bg_color #94cdf7;
 
 /* FLAT BACKGROUNDS - All use surface */
-@define-color window_bg_color #11131c;
-@define-color window_fg_color #e1e1ef;
-@define-color view_bg_color #11131c;
-@define-color view_fg_color #e1e1ef;
-@define-color headerbar_bg_color #11131c;
-@define-color headerbar_fg_color #e1e1ef;
-@define-color sidebar_bg_color #11131c;
-@define-color sidebar_fg_color #e1e1ef;
-@define-color secondary_sidebar_bg_color #11131c;
-@define-color secondary_sidebar_fg_color #e1e1ef;
+@define-color window_bg_color #101417;
+@define-color window_fg_color #dfe3e8;
+@define-color view_bg_color #101417;
+@define-color view_fg_color #dfe3e8;
+@define-color headerbar_bg_color #101417;
+@define-color headerbar_fg_color #dfe3e8;
+@define-color sidebar_bg_color #101417;
+@define-color sidebar_fg_color #dfe3e8;
+@define-color secondary_sidebar_bg_color #101417;
+@define-color secondary_sidebar_fg_color #dfe3e8;
 
 /* Card/Dialog backgrounds - slight elevation */
-@define-color card_bg_color #1d1f29;
-@define-color card_fg_color #e1e1ef;
-@define-color dialog_bg_color #1d1f29;
-@define-color dialog_fg_color #e1e1ef;
-@define-color popover_bg_color #1d1f29;
-@define-color popover_fg_color #e1e1ef;
+@define-color card_bg_color #1c2024;
+@define-color card_fg_color #dfe3e8;
+@define-color dialog_bg_color #1c2024;
+@define-color dialog_fg_color #dfe3e8;
+@define-color popover_bg_color #1c2024;
+@define-color popover_fg_color #dfe3e8;
 
 /* Buttons and interactive elements */
-@define-color success_bg_color #b8c4ff;
-@define-color success_fg_color #1f2c61;
-@define-color warning_bg_color #89d0ee;
-@define-color warning_fg_color #003545;
+@define-color success_bg_color #cec0e8;
+@define-color success_fg_color #352b4b;
+@define-color warning_bg_color #b7c9d9;
+@define-color warning_fg_color #21323f;
