@@ -243,7 +243,7 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "dank",
+  "launcherLogoMode": "compositor",
   "launcherLogoCustomPath": "/home/duane/Downloads/skull_64dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg",
   "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,
@@ -265,8 +265,8 @@
   "soundNewNotification": true,
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
-  "acMonitorTimeout": 300,
-  "acLockTimeout": 600,
+  "acMonitorTimeout": 1800,
+  "acLockTimeout": 300,
   "acSuspendTimeout": 7200,
   "acSuspendBehavior": 0,
   "acProfileName": "0",
@@ -482,9 +482,9 @@
         }
       ],
       "spacing": 25,
-      "innerPadding": 4,
+      "innerPadding": 0,
       "bottomGap": 0,
-      "transparency": 0.45,
+      "transparency": 0.5,
       "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
@@ -514,7 +514,8 @@
       "shadowIntensity": 40,
       "shadowOpacity": 51,
       "shadowColorMode": "custom",
-      "shadowCustomColor": "#000000"
+      "shadowCustomColor": "#000000",
+      "widgetPadding": 8
     }
   ],
   "desktopClockEnabled": false,

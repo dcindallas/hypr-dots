@@ -1,0 +1,7 @@
+yt-dlp -x --audio-format mp3 --audio-quality 0 \
+--cookies-from-browser chrome \
+--embed-metadata --embed-thumbnail \
+--parse-metadata "playlist_index:%(track_number)s" \
+--parse-metadata "title:%(title)s" \
+-o "~/Music/1-New)Music/%(artist,uploader)s - %(title)s [%(id)s].%(ext)s" \
+https://youtube.com/playlist?list=PLpPwZ-gD5l4raFJ1xuM0xtSvxXrfzwLJS&si=AEfdC32xGvdnRuKc"
