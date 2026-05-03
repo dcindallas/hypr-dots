@@ -2,46 +2,46 @@
   "theme": "DevStreetLab Dark",
   "theme_overrides": {
     "DevStreetLab Dark": {
-      "background": "#151218",
-      "editor.background": "#151218",
-      "editor.gutter.background": "#151218",
-      "surface.background": "#151218",
-      "elevated_surface.background": "#151218",
-      "tab_bar.background": "#151218",
-      "tab.inactive_background": "#151218",
-      "tab.active_background": "#221e24",
-      "toolbar.background": "#151218",
-      "title_bar.background": "#151218",
-      "title_bar.inactive_background": "#151218",
-      "panel.background": "#151218",
-      "status_bar.background": "#151218",
-      "terminal.background": "#151218",
-      "element.background": "#151218",
-      "ghost_element.background": "#151218",
+      "background": "#101418",
+      "editor.background": "#101418",
+      "editor.gutter.background": "#101418",
+      "surface.background": "#101418",
+      "elevated_surface.background": "#101418",
+      "tab_bar.background": "#101418",
+      "tab.inactive_background": "#101418",
+      "tab.active_background": "#1d2024",
+      "toolbar.background": "#101418",
+      "title_bar.background": "#101418",
+      "title_bar.inactive_background": "#101418",
+      "panel.background": "#101418",
+      "status_bar.background": "#101418",
+      "terminal.background": "#101418",
+      "element.background": "#101418",
+      "ghost_element.background": "#101418",
       "border": "#00000000",
       "border.variant": "#00000000",
       "border.transparent": "#00000000",
       "scrollbar.thumb.background": "00000000",
-      "scrollbar.thumb.hover_background": "#4a454e",
+      "scrollbar.thumb.hover_background": "#42474e",
       "scrollbar.thumb.border": "#00000000",
-      "scrollbar.track.background": "#151218",
+      "scrollbar.track.background": "#101418",
       "scrollbar.track.border": "#00000000",
       "syntax": {
         "string": {
-          "color": "#f6efff"
+          "color": "#eff6ff"
         },
         "string.regex": {
-          "color": "#c6a4ed"
+          "color": "#85b6ef"
         },
         "constant": {
-          "color": "#f6efff"
+          "color": "#eff6ff"
         },
         "comment": {
-          "color": "#9b96a2",
+          "color": "#979da3",
           "font_style": "italic"
         },
         "keyword": {
-          "color": "#ff9fb0"
+          "color": "#ff9fbb"
         }
       }
     }
